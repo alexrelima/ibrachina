@@ -1,7 +1,7 @@
 <?php get_header();?>
 <div class="banner">
 	<?php 
-		$args = array('post_type' => 'banners', 'posts_per_page' => -1, 'order' =>'asc', 'orderby' =>'menu_order');
+		$args = array('post_type' => 'banners', 'posts_per_page' => 1, 'order' =>'asc', 'orderby' =>'menu_order');
 		$loop = new WP_Query( $args ); while ( $loop->have_posts() ) : $loop->the_post();
 
 		$image = get_field('imagem_de_destaque');
@@ -14,8 +14,8 @@
 					<div class="row">
 						<?php the_field('chamada');?>
 						<div class="buttons">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>contato/" title="" class="btn btn-red">Saiba Mais</a>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>contato/" title="" class="btn btn-red">Cadastre-se</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>contato/" title="" class="btn btn-red"><?php esc_html_e( 'Saiba Mais', 'ibrachina' ); ?></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>contato/" title="" class="btn btn-red"><?php esc_html_e( 'Cadastre-se', 'ibrachina' ); ?></a>
 						</div>
 					</div>
 				</div>
@@ -25,88 +25,95 @@
 </div>
 
 <div class="sobre">
-	<img src="<?php bloginfo('template_directory');?>/images/sobre.png" alt="" class="img-responsive sobre-img">
-	<div class="logo-vertical">
-		<img src="<?php bloginfo('template_directory');?>/images/arena-logo.png" alt="" class="img-responsive">
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col col-xs-12 col-sm-6 col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6">
-				<span>Bem Vindo</span>
-				<h2>título sobre <strong>ibrachina</strong></h2>
+	<?php $my_query = new WP_Query('page_id=53');
+		while ($my_query->have_posts()) : $my_query->the_post();
+		$do_not_duplicate = $post->ID;
 
-				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis se nibh id elit. Duis sed odio sit amet nibh vulputate cursus a.</p>
+		$image = get_field('imagem_de_destaque');
+		$logotipo = get_field('logotipo');
+	?>
+		<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="img-responsive sobre-img">
+		<div class="logo-vertical">
+			<img src="<?php echo esc_url($logotipo['url']); ?>" alt="<?php echo esc_attr($logotipo['alt']); ?>" class="img-responsive">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col col-xs-12 col-sm-6 col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6">
+					<span><?php esc_html_e( 'Bem Vindo', 'ibrachina' ); ?></span>
+					<?php the_content();?>
 
-				<p>Amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae consequat auctor eu in elit. Class aptent taciti sociosqu ad</p>
-
-				<p>torquent per conubia nostra, per inceptos himenaeos Mauris.</p>
-
-				<a href="" class="btn btn-red">Saiba Mais</a>
+					<a href="" class="btn btn-red"><?php esc_html_e( 'Saiba Mais', 'ibrachina' ); ?></a>
+				</div>
 			</div>
 		</div>
-	</div>
+	<?php endwhile; wp_reset_query();?>
 </div>
 
 <div class="porque">
-	<div class="container">
-		<div class="row">
-			<h2>Ibrachina F.C</h2>
+	<?php $my_query = new WP_Query('page_id=69');
+		while ($my_query->have_posts()) : $my_query->the_post();
+		$do_not_duplicate = $post->ID;
 
-			<div class="pq-head">
-				<span>Porque o Ibrachina?</span>
-				<h3>É <strong>por isso</strong> que você<br> <strong>não precisa</strong> mais procurar...</h3>
-			</div>
+		$atleta = get_field('atleta');
+	?>
+		<div class="container">
+			<div class="row">
+				<h2>Ibrachina F.C</h2>
 
-			<div class="box-pq">
-				<div class="box-itens">
-					<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
-						<img src="<?php bloginfo('template_directory');?>/images/treinamento.png" alt="">
-						<h4>Treinamento</h4>
-						<p>Treinamento eficaz por treinadores profissionais.</p>
-					</div>
-					<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
-						<img src="<?php bloginfo('template_directory');?>/images/academia.png" alt="">
-						<h4>Academia juvenil</h4>
-						<p>Um ótimo programa de treinamento para jovens.</p>
-					</div>
-					<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
-						<img src="<?php bloginfo('template_directory');?>/images/equipe.png" alt="">
-						<h4>Equipe unida</h4>
-						<p>Ser um jogador de equipe gera um sentimento com o esporte.</p>
-					</div>
-					<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
-						<img src="<?php bloginfo('template_directory');?>/images/campeonatos.png" alt="">
-						<h4>Campeonatos</h4>
-						<p>Todos os nossos jogadores participam de campeonatos</p>
-					</div>
+				<div class="pq-head">
+					<span><?php esc_html_e( 'Porque o', 'ibrachina' ); ?> Ibrachina?</span>
+					<?php the_content();?>
 				</div>
-				<img src="<?php bloginfo('template_directory');?>/images/atleta.png" alt="" class="atleta">
+
+				<div class="box-pq">
+					<div class="box-itens">
+						<?php if( have_rows('motivos') ): ?>
+							<?php
+								while( have_rows('motivos') ): the_row();
+								$imageDestaque = get_sub_field('imagem_de_destaque');
+							?>
+								<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
+									<?php echo wp_get_attachment_image( $imageDestaque, 'full' ); ?>
+									<h4><?php echo acf_esc_html( get_sub_field('titulo') ); ?></h4>
+									<p><?php echo acf_esc_html( get_sub_field('conteudo') ); ?></p>
+								</div>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+					<img src="<?php bloginfo('template_directory');?>/images/atleta.png" alt="" class="atleta">
+				</div>
 			</div>
 		</div>
-	</div>
+	<?php endwhile; wp_reset_query();?>
 </div>
 
 
 <div class="futuro">
-	<div class="container">
-		<div class="row">
-			<h2><strong>Olhando para o futuro,</strong> faça parte da equipe!</h2>
-			<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img src="<?php bloginfo('template_directory');?>/images/melhores-medias.png" alt="" class="img-responsive">
-				<div class="box-futuro">
-					<h3>Atletas com as maiores médias no último jogo por categoria</h3>
-					<a href="" class="btn btn-red">Nossos Destaques</a>
-				</div>
-			</div>
-			<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img src="<?php bloginfo('template_directory');?>/images/alem-do-futebol.png" alt="" class="img-responsive">
-				<div class="box-futuro">
-					<h3>muito além do futebol, aprenda com os melhores</h3>
-					<a href="" class="btn btn-red">Inscreva-se</a>
-				</div>
+	<?php $my_query = new WP_Query('page_id=117');
+		while ($my_query->have_posts()) : $my_query->the_post();
+		$do_not_duplicate = $post->ID;
+	?>
+		<div class="container">
+			<div class="row">
+				<?php the_content();?>
+
+				<?php if( have_rows('futuro') ): ?>
+					<?php
+						while( have_rows('futuro') ): the_row();
+						$imageDest = get_sub_field('imagem_de_destaque');
+					?>
+						<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<?php echo wp_get_attachment_image( $imageDest, 'full', array ('class' => 'img-responsive' ) ); ?>
+							<div class="box-futuro">
+								<h3><?php echo acf_esc_html( get_sub_field('conteudo') ); ?></h3>
+								<a href="<?php echo acf_esc_html( get_sub_field('url') ); ?>" class="btn btn-red"><?php echo acf_esc_html( get_sub_field('rotulo') ); ?></a>
+							</div>
+						</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
 			</div>
 		</div>
-	</div>
+	<?php endwhile; wp_reset_query();?>
 </div>
 
 
@@ -122,7 +129,7 @@
 						<?php while( have_rows('resultados') ): the_row(); 
 							?>
 							<div class="item">
-								<p>Resultado do último jogo <?php echo acf_esc_html( get_sub_field('categoria') ); ?> - <?php echo acf_esc_html( get_sub_field('mandante') ); ?> <?php echo acf_esc_html( get_sub_field('placar_do_mandante') ); ?> x <?php echo acf_esc_html( get_sub_field('placar_do_visitante') ); ?> <?php echo acf_esc_html( get_sub_field('visitante') ); ?> </p>
+								<p><?php esc_html_e( 'Resultado do último jogo', 'ibrachina' ); ?> <?php echo acf_esc_html( get_sub_field('categoria') ); ?> - <?php echo acf_esc_html( get_sub_field('mandante') ); ?> <?php echo acf_esc_html( get_sub_field('placar_do_mandante') ); ?> x <?php echo acf_esc_html( get_sub_field('placar_do_visitante') ); ?> <?php echo acf_esc_html( get_sub_field('visitante') ); ?> </p>
 							</div>
 						<?php endwhile; ?>
 					</div>
@@ -136,22 +143,22 @@
 	<div class="container">
 		<div class="row">
 			<?php $my_query = new WP_Query('page_id=34');
-				while ($my_query->have_posts()) : $my_query->the_post();
-				$do_not_duplicate = $post->ID;
+			  while ($my_query->have_posts()) : $my_query->the_post();
+			  $do_not_duplicate = $post->ID;
 			?>
 				<h2><?php the_title();?></h2>
 				<div class="patro-head">
-					<span>Conheça</span>
-					<h3>As marcas que apadrinham o sonho do time ibrachina</h3>
+					<span><?php esc_html_e( 'Conheça', 'ibrachina' ); ?></span>
+					<?php the_content();?>
 				</div>
 				<?php if( have_rows('patrocinadores') ): ?>
-						<?php while( have_rows('patrocinadores') ): the_row(); $image = get_sub_field('logotipo');?>
+						<?php while( have_rows('patrocinadores') ): the_row(); $patro = get_sub_field('logotipo');?>
 							<div class="item-patro">
-								 <?php echo wp_get_attachment_image( $image, 'full' ); ?>
+								 <?php echo wp_get_attachment_image( $patro, 'full' ); ?>
 							</div>
 						<?php endwhile; ?>
 				<?php endif; ?>
-				<a href="#" class="btn btn-red">Faça Parte</a>
+				<a href="#" class="btn btn-red"><?php esc_html_e( 'Faça Parte', 'ibrachina' ); ?></a>
 			<?php endwhile; wp_reset_query();?>
 		</div>
 	</div>
@@ -160,7 +167,7 @@
 <div class="insta">
 	<div class="container">
 		<div class="row">
-			<h2><strong>+10K</strong> de <strong>seguidores</strong> nas redes</h2>
+			<h2><strong>+10K</strong> <?php esc_html_e( 'de', 'ibrachina' ); ?> <strong><?php esc_html_e( 'Seguidores', 'ibrachina' ); ?></strong> <?php esc_html_e( 'nas Redes', 'ibrachina' ); ?></h2>
 			<?php echo do_shortcode('[instagram-feed feed=1]')?>
 		</div>
 	</div>

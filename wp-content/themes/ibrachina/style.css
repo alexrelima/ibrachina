@@ -9385,7 +9385,7 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 .sobre p { color: #fff; max-width: 68%; font-family: "Open Sans", sans-serif; font-optical-sizing: auto; margin-left: 25px; margin-bottom: 25px; } 
 .sobre .btn { margin: 40px 0px 0px 0px; }
 
-.porque {background: url('images/bg-pq.png') #081426;background-repeat: no-repeat;position: relative;padding: 26px 0px;background-size: 100%;float: left;width: 100%;}
+.porque {background: url('images/bg-pq.png') #081426;background-repeat: no-repeat;position: relative;padding: 26px 0px;background-size: 100% 100%;float: left;width: 100%;}
 .porque h2 {text-align: center;text-transform: uppercase;font-size: 200px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;margin: 0px 0px 60px 0px;line-height: 1;color: rgb(255 255 255 / 15%);}
 .pq-head {position: absolute;top: 50px;} 
 .pq-head span {font-size: large;text-transform: uppercase;color: #ce171e;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;} 
@@ -9402,10 +9402,10 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 .futuro { padding: 90px 0px 50px; float: left; width: 100%; }
 .futuro h2 { text-align: center; margin: 0px 0px 30px; text-transform: uppercase; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 400; font-size: 38px; }
 .futuro h2 strong { font-weight: 600; }
-.box-futuro { position: absolute; bottom: 33px; max-width: 270px; margin: 0 auto; display: block; float: none; text-align: center; left: calc(50% - 135px); } 
+.box-futuro {position: absolute;bottom: 33px;max-width: 290px;margin: 0 auto;display: block;float: none;text-align: center;left: calc(50% - 145px);} 
 .box-futuro h3 { color: #fff; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-size: 18px; text-transform: uppercase; }
 .futuro .btn.btn-red { margin: 0px; margin: 0 auto; display: block; float: none; max-width: 250px; padding: 13px 0px; }
-.futuro img { margin: 0 auto; }
+.futuro img {margin: 0 auto;display: block;}
 
 
 .resultado {width: 100%;float: left;background: url(images/bg-resultados.png) #b01d23;background-repeat: no-repeat;background-size: cover;}
@@ -9423,7 +9423,7 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 .patro-head h3 {color: #262f3e;text-transform: uppercase;font-weight: 600;font-size: 38px;margin: 15px 0px 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;width: 70%;line-height: 1.3;}
 .patro-head h3 strong{font-style:normal;}
 .item-patro {width: 25%;border: 1px solid #ccc;float: left;text-align: center;padding: 117px 0px;margin: 0px 0px 40px 0px;}
-.patrocinadores .btn {margin: 0px;max-width: 202px;margin: 0 auto;display: block;float: none;clear: both;}
+.patrocinadores .btn {margin: 0px;max-width: 225px;margin: 0 auto;display: block;float: none;clear: both;}
 
 .insta { float: left; width: 100%; padding: 0px 0px 40px 0px; }
 .insta h2 { color: #262f3e; text-transform: uppercase; font-weight: 400; font-size: 38px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; text-align: center; margin: 0px; }
