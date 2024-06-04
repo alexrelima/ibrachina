@@ -26,12 +26,7 @@
           </h1>
           <div class="header-content">
             <div class="idiomas">
-              <a href="">
-                <img src="<?php bloginfo('template_directory');?>/images/br.png" alt="">
-              </a>
-              <a href="">
-                <img src="<?php bloginfo('template_directory');?>/images/us.png" alt="">
-              </a>
+              <?php do_action( 'wpml_add_language_selector' );?>
             </div>
             <?php wp_nav_menu(array('theme_location' => 'menu-principal'));?>
           </div>

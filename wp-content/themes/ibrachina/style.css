@@ -8410,19 +8410,19 @@ hr {
 
 @media (min-width: 768px) {
     .container {
-        width:750px
+        width: 100%;
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        width:970px
+        width: 100%;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        width:1170px
+        width: 100%;
     }
 }
 
@@ -9354,14 +9354,27 @@ hr {
 .menu-principal-container {/* float: right; */} 
 #menu-principal { display: inline-block; padding: 0px; margin: 0px; list-style: none; } 
 #menu-principal li {padding: 10px 0px;display: inline-block;} 
-header {background: #000;float: left;width: 100%;}
-header:after { content: ""; width: 100%; height: 6px; background: #fff; float: left; background: rgb(176,29,35); background: linear-gradient(90deg, rgba(176,29,35,1) 0%, rgba(83,147,184,1) 100%); }
-.header-content { float: right; } .idiomas a { margin: 0px 0px 0px 5px; } 
-.idiomas a:hover, .idiomas a:focus { opacity: 0.8; text-decoration: none; outline: none; }
 #menu-principal li a { color: #fff; text-transform: uppercase; font-size: 17px; margin: 0px 0px 0px 50px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; }
 #menu-principal li:first-child a { margin: 0px; }
 
-.banner {overflow: hidden;float: left;} .full-bn { object-fit: cover; z-index: 8; position: relative } 
+#menu-principal-en { display: inline-block; padding: 0px; margin: 0px; list-style: none; } 
+#menu-principal-en li {padding: 10px 0px;display: inline-block;} 
+#menu-principal-en li a { color: #fff; text-transform: uppercase; font-size: 17px; margin: 0px 0px 0px 50px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; }
+#menu-principal-en li:first-child a { margin: 0px; }
+
+
+header {background: #000;float: left;width: 100%;}
+header:after { content: ""; width: 100%; height: 6px; background: #fff; float: left; background: rgb(176,29,35); background: linear-gradient(90deg, rgba(176,29,35,1) 0%, rgba(83,147,184,1) 100%); }
+.header-content { float: right; } .idiomas a {margin: 0px 0px 0px 5px;} 
+.idiomas a:hover, .idiomas a:focus { opacity: 0.8; text-decoration: none; outline: none; }
+.wpml-ls-item-pt-br { background: url('images/br.png'); width: 38px; height: 28px;}
+.wpml-ls-item-en{background: url('images/us.png');width: 36px;height: 28px;margin: 0px 0px 0px 10px!important;}
+.wpml-ls-item-pt-br a, .wpml-ls-item-en a { color: transparent; font-size: 1px; float: left; height: 100%; width: 100%; margin: 0px; }
+.wpml-ls-legacy-list-horizontal { padding: 0px!important; }
+
+
+
+.banner {overflow: hidden;float: left;width: 100%;} .full-bn {object-fit: cover;z-index: 8;position: relative;width: 100%;} 
 .banner-full.active-slide img { z-index: 9 } 
 .zoom { animation: scale 10s linear infinite } 
 @keyframes scale { 50% { -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -ms-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2) } } 
@@ -9391,10 +9404,10 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 .pq-head span {font-size: large;text-transform: uppercase;color: #ce171e;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;} 
 .pq-head h3 {color: #fff;text-transform: uppercase;font-weight: 400;font-size: 38px;margin: 15px 0px 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;}
 .pq-head h3 strong{font-style:normal;}
-.box-pq {background: url('images/bg-ibra.png') #fff;background-repeat: no-repeat;background-position: 105%;border-radius: 20px;width: 90%;padding: 72.5px 20px;position: relative;margin: 0 auto;display: flex;height: auto;}
+.box-pq {background: url('images/bg-ibra.png') #fff;background-repeat: no-repeat;background-position: 105%;border-radius: 20px;width: 90%;padding: 72.5px 20px;position: relative;margin: 0 auto;display: flex;height: auto;background-size: 40% 100%;}
 .box-pq .atleta {float: right;position: absolute;bottom: -79px;right: -60px;}
-.box-itens img { float: left; margin: 0px 25px 0px 0px } 
-.box-itens { width: 70%; } 
+.box-itens img {float: left;margin: 0px 25px 20px 0px;} 
+.box-itens {width: 67%;} 
 .box-itens h4 { margin: 0px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; font-size: 19px; } 
 .box-itens .col { margin: 21px 0px; padding: 0px 35px; } 
 .box-itens p {width: 95%;font-family: "Open Sans", sans-serif;font-optical-sizing: auto;}
@@ -9405,7 +9418,7 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 .box-futuro {position: absolute;bottom: 33px;max-width: 290px;margin: 0 auto;display: block;float: none;text-align: center;left: calc(50% - 145px);} 
 .box-futuro h3 { color: #fff; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-size: 18px; text-transform: uppercase; }
 .futuro .btn.btn-red { margin: 0px; margin: 0 auto; display: block; float: none; max-width: 250px; padding: 13px 0px; }
-.futuro img {margin: 0 auto;display: block;}
+.futuro img {margin: 0 auto;display: block;width: 100%;height: auto;}
 
 
 .resultado {width: 100%;float: left;background: url(images/bg-resultados.png) #b01d23;background-repeat: no-repeat;background-size: cover;}
@@ -9430,9 +9443,9 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 
 
 footer {background: url(images/bg-pq.png) #081426;background-repeat: no-repeat;position: relative;padding: 55px 0px 0px;background-size: 100%;float: left;width: 100%;color: #fff;font-family: "Open Sans", sans-serif;font-optical-sizing: auto;font-size: 17px;}
-.footer-img { position: absolute; right: 0; top: 0; height: calc(100% - 92px); }
+.footer-img {position: absolute;right: 0;top: 0;height: calc(100% - 76px);display: none;}
 footer .container { z-index: 10; position: relative; }
-.content-footer { margin: 0px 0px 0px 10px; } 
+.content-footer {margin: 0px 0px 0px 10px;font-size: 15px;} 
 footer h5 { font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-size: 19px; margin: 0px 0px 26px 0px; } 
 footer a { color: #fff; font-family: "Open Sans", sans-serif; font-optical-sizing: auto; font-size: 17px; } 
 footer a:hover {text-decoration: none;outline: none;color: #0093ba;}
@@ -9449,17 +9462,197 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 .siga { width: 20%; float: left; }
 
 
+@media only screen and (max-width: 1780px) and (min-width: 1500px) {
+    .banner-content { top: 200px; }
+    .sobre .sobre-img { left: -150px; }
+}
+
+@media only screen and (max-width: 1499px) and (min-width: 1200px) {
+    .banner-content h2 { font-size: 70px; } 
+    .banner-content { padding: 0px 15px; top: 150px; }
+    header .container { padding: 0px 30px; } 
+    .wpml-ls-legacy-list-horizontal { padding-right: 0; } 
+    .sobre .sobre-img { left: -210px; } 
+    .sobre span { margin: 100px 0px 0px 40px; } 
+    .sobre p {margin-left: 65px;} 
+    .sobre .btn { margin: 40px 0px 0px 40px; } 
+    .porque { padding: 26px 15px; } 
+    .porque h2 { font-size: 180px; } 
+    .box-pq { background-size: 50% 100%; } 
+    .box-itens img { margin: 0px 25px 35px 0px; }
+    .patrocinadores { padding: 80px 15px; } 
+    .insta {padding: 0px 15px;} 
+    footer .container { padding: 0px 30px; }
+} 
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .logo { padding: 0px 0px 0px 15px; } 
+    .menu-principal-en-container {padding: 0px;} 
+    .header-content { padding: 0px 15px 0px 0px; }
+    .porque { padding: 26px 15px; } 
+    .patrocinadores { padding: 80px 15px; } 
+    .insta { padding: 0px 15px; } 
+    footer .container { padding: 0px 30px; }
+    #menu-principal-en li a { margin: 0px 0px 0px 25px; } 
+    .banner-content h2 { font-size: 50px; } 
+    .banner-content {top: 150px;padding: 0px 15px;} 
+    .sobre .sobre-img { left: -280px; } 
+    .sobre span { margin: 50px 0px 0px 70px; } 
+    .sobre p { margin-left: 95px; } 
+    .sobre .btn { margin: 40px 0px 0px 70px; } 
+    .porque h2 { font-size: 150px; } 
+    .box-itens img { margin: 0px 20px 15px 0px; } 
+    .box-pq { background-size: 55% 100%; }    
+    .box-itens .col { padding: 0px; position: relative; z-index: 10; } 
+    .item-patro { padding: 60px 0px; } 
+    .box-pq .atleta { right: -30px; width: 44%; bottom: -68px; }
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
+    header .logo { padding: 0px 0px 0px 15px; } 
+    .menu-principal-en-container, .menu-principal-container { display: none; } 
+    .wpml-ls-legacy-list-horizontal { padding: 0px 16px 0px 0px; } 
+    .banner-content h2 { font-size: 50px; } 
+    .banner-content { top: 120px; padding: 0px 15px; } 
+    .logo-vertical { display: none; } 
+
+    .sobre .sobre-img { left: -290px; }
+    .sobre span { margin: 50px 0px 0px; } 
+    .sobre p { max-width: 100%; text-shadow: 2px 2px 2px rgba(0,0,0,0.6); } 
+    .sobre .btn { margin: 20px 0px 40px; } .porque { padding: 26px 15px; } 
+    .porque h2 { font-size: 120px; text-align: left; margin: 0px 0px 130px; } 
+    .pq-head { top: 95px; } 
+    .box-pq { background: linear-gradient(180deg, rgba(7, 154, 165, 1) 0%, rgba(255, 142, 21, 1) 60%, rgba(228, 94, 69, 1) 100%); width: 100%; } 
+    .box-pq .atleta { display: none; }
+    .box-itens { width: 100%; color: #fff; } 
+    .box-itens .col { padding: 0px; } 
+    .box-itens img { margin: 0px 25px 20px; } 
+    .futuro img { width: 100%; height: auto; } 
+    .placares p { font-size: 27px; padding: 50px 15px 0px; } 
+    .patrocinadores h2 { font-size: 120px; text-align: left; margin: 0px 0px 130px; }
+    .patro-head {top: 120px;} 
+    .patrocinadores { padding: 50px 15px 80px; } 
+    .item-patro { width: 50%; padding: 50px; margin: 0px; }
+    .patrocinadores .btn { margin-top: 30px; display: inline-block; width: 50%; margin-left: calc(25% - 0px); max-width: 100%; } 
+    .insta { padding: 0px 15px; } 
+    footer .container { padding: 0px 30px; } 
+    footer { background-size: 100% 100%; }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 577px) {
+    header .logo { padding: 0px 0px 0px 15px; } 
+    .menu-principal-en-container, .menu-principal-container { display: none; } 
+    .wpml-ls-legacy-list-horizontal { padding: 0px 16px 0px 0px; } 
+    .banner-content h2 {max-width: 100%;font-size: 50px;color: #000;text-align: center;} 
+    .banner-content {position: relative;top: 0;padding: 35px 15px 40px;} 
+    .btn { font-size: 16px; width: 48%; margin: 0px 1%; padding: 13px; } 
+    .buttons { width: 100%; } 
+    .logo-vertical {display: none; } 
+    .sobre {background-size: 100% 60%;background-position: bottom right;background: #081224;padding: 0px 0px 0px;} 
+    .sobre .sobre-img { position: relative; } 
+    .sobre span { margin: 30px 0px 0px; } 
+    .sobre p { max-width: 100%; } 
+    .sobre .col {background: url('images/sombra-sobre.png') #081224;background-position: top right;background-size: 100% 100%;background-repeat: no-repeat;padding-bottom: 40px;}
+    .sobre .btn { margin: 10px 0px 0px 0px; }
+
+    .banner-content h2 strong { color: #fff; margin: 0px 10px 0px 0px; }
+    .us-version .banner-content h2 strong { margin: 0px; }
+
+    .porque h2 {font-size: 90px;text-align: left;margin: 0px 0px 100px;} 
+    .porque { padding: 26px 15px; } .pq-head { /* position: relative; */ top: 65px; } 
+    .pq-head h3 { font-size: 25px; margin: 0px; } .box-itens { width: 100%; /* transform: rotate(-30deg); */ } 
+    .box-pq { padding: 25px 15px; width: 100%; background-position: bottom right; background-size: 280% 100%; color: #fff; background: rgb(7,154,165); background: linear-gradient(180deg, rgba(7,154,165,1) 0%, rgba(255,142,21,1) 60%, rgba(228,94,69,1) 100%); } 
+    .box-itens img { margin: 0 auto; display: block; float: none; } 
+    .box-itens h4 {text-align: center;margin: 15px 0px 0px;} 
+    .box-itens p { text-align: center; width: 100%; } 
+    .box-pq .atleta { display: none; } 
+
+    .futuro h2 { font-size: 25px; } 
+    .futuro img { max-width: 100%; height: auto; margin-bottom: 50px; } 
+    .box-futuro { bottom: 70px; } .futuro { padding: 50px 0px 0px; } 
+
+    .placares p { font-size: 20px; } 
+
+    .patro-head {top: 77px;margin-left: 0;} 
+    .patrocinadores h2 {font-size: 90px;margin: 0px 0px 65px 0px;} 
+    .patrocinadores { padding: 50px 15px; } .patro-head h3 { font-size: 25px; width: 100%; margin: 0px; } 
+    .item-patro { width: 50%; padding: 40px; margin: 0px; } 
+    .patrocinadores .btn {margin-top: 30px;display: inline-block;width: 50%;margin-left: calc(25% - 0px);max-width: 100%;} 
+
+    .insta { padding: 0px 15px; } 
+    .insta h2 { font-size: 25px; }
+
+    footer .container { padding: 0px 30px; } 
+    footer {background-size: 100% 100%;} 
+    .sobre-footer { width: 100%; } 
+    .info-footer { width: 100%; margin: 20px 0px 0px; } 
+    .siga { width: 100%; margin: 20px 0px 0px 0px; } 
+    .copy p { font-size: 15px; } 
+    .copy { padding: 15px 0px; } 
+    .copy .dev a { font-size: 15px; } 
+    footer ul li { margin: 0px 20px 20px 0px; }
+    footer a { font-size: 15px; } 
+    footer ul li a { font-size: 17px; }
 }
 
 @media (max-width: 576px) {
+    header .logo { padding: 0px 0px 0px 15px; } 
+    .menu-principal-en-container, .menu-principal-container { display: none; } 
+    .wpml-ls-legacy-list-horizontal { padding: 0px 16px 0px 0px; } 
+    .banner-content h2 { max-width: 100%; font-size: 35px; color: #000; text-align: center; } 
+    .banner-content {position: relative;top: 0;padding: 35px 15px 40px;} 
+    .btn { font-size: 16px; width: 48%; margin: 0px 1%; padding: 13px; } 
+    .buttons { width: 100%; } 
+    .logo-vertical {display: none; } 
+    .sobre {background-size: 100% 60%;background-position: bottom right;background: #081224;padding: 0px 0px 0px;} 
+    .sobre .sobre-img { position: relative; } 
+    .sobre span { margin: 30px 0px 0px; } 
+    .sobre p { max-width: 100%; } 
+    .sobre .col {background: url('images/sombra-sobre.png') #081224;background-position: top right;background-size: 100% 100%;background-repeat: no-repeat;padding-bottom: 40px;}
+    .sobre .btn { margin: 10px 0px 0px 0px; }
+
+    .banner-content h2 strong { color: #fff; margin: 0px 10px 0px 0px; }
+    .us-version .banner-content h2 strong { margin: 0px; }
+
+    .porque h2 { font-size: 55px; text-align: left; margin: 0px 0px 120px; } 
+    .porque { padding: 26px 15px; } .pq-head { /* position: relative; */ top: 65px; } 
+    .pq-head h3 { font-size: 25px; margin: 0px; } .box-itens { width: 100%; /* transform: rotate(-30deg); */ } 
+    .box-pq { padding: 25px 15px; width: 100%; background-position: bottom right; background-size: 280% 100%; color: #fff; background: rgb(7,154,165); background: linear-gradient(180deg, rgba(7,154,165,1) 0%, rgba(255,142,21,1) 60%, rgba(228,94,69,1) 100%); } 
+    .box-itens img { margin: 0 auto; display: block; float: none; } 
+    .box-itens h4 { text-align: center; } 
+    .box-itens p { text-align: center; width: 100%; } 
+    .box-pq .atleta { display: none; } 
+
+    .futuro h2 { font-size: 25px; } 
+    .futuro img { max-width: 100%; height: auto; margin-bottom: 50px; } 
+    .box-futuro { bottom: 70px; } .futuro { padding: 50px 0px 0px; } 
+
+    .placares p { font-size: 20px; } 
+
+    .patro-head {top: 77px;margin-left: 0;} 
+    .patrocinadores h2 { font-size: 48px; margin: 0px 0px 105px 0px; } 
+    .patrocinadores { padding: 50px 15px; } .patro-head h3 { font-size: 25px; width: 100%; margin: 0px; } 
+    .item-patro { width: 50%; padding: 40px; margin: 0px; } 
+    .patrocinadores .btn {margin-top: 30px;display: inline-block;width: 50%;margin-left: calc(25% - 0px);} 
+
+    .insta { padding: 0px 15px; } 
+    .insta h2 { font-size: 25px; }
+
+    footer .container { padding: 0px 30px; } 
+    footer {background-size: 100% 100%;} 
+    .sobre-footer { width: 100%; } 
+    .info-footer { width: 100%; margin: 20px 0px 0px; } 
+    .siga { width: 100%; margin: 20px 0px 0px 0px; } 
+    .copy p { font-size: 15px; } 
+    .copy { padding: 15px 0px; } 
+    .copy .dev a { font-size: 15px; } 
+    footer ul li { margin: 0px 20px 20px 0px; }
+    footer a { font-size: 15px; } 
+    footer ul li a { font-size: 17px; }
 }
 
 @media (max-width: 360px) {
 }
+
+
+

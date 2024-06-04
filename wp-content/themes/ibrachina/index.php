@@ -38,7 +38,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col col-xs-12 col-sm-6 col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6">
+				<div class="col col-xs-12 col-sm-offset-6 col-sm-6 col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6">
 					<span><?php esc_html_e( 'Bem Vindo', 'ibrachina' ); ?></span>
 					<?php the_content();?>
 

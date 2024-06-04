@@ -1,5 +1,15 @@
 $(window).load(function(){
-	
+
+	if ($('html').is(':lang(pt-BR)')) {
+		$("body").addClass("pt-version");
+		$("body").removeClass("us-version");
+	}
+
+	if ($('html').is(':lang(en-us)')) {
+		$("body").addClass("us-version");
+		$("body").removeClass("pt-version");
+	}
+
 });
 
 $(function() {
@@ -21,8 +31,13 @@ $(function() {
 		}
 	});
 
-	var img = $(".sobre img");
-	$(".sobre").css({height:img.height()});
+
+
+	
+
+	
+
+	
 
 
 	var SPMaskBehavior = function (val) {
@@ -34,4 +49,36 @@ $(function() {
 		},
 	};
 	$(".fullphone").mask(SPMaskBehavior, spOptions);
+
+
+	if ($(window).width() < 992) {
+		
+	}
+
+	if ($(window).width() < 768) {
+		
+
+	} else {
+		var img = $(".sobre img");
+		$(".sobre").css({height:img.height()});
+	}
+});
+
+$(window).resize(function(){
+	if ($(window).width() < 992) {
+		
+
+	} else{ 
+		
+	}
+
+	if ($(window).width() < 768) {
+		
+		
+		
+	}else{
+		
+		
+		
+	}
 });
