@@ -9381,7 +9381,7 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 .banner-content {position: absolute;top: 250px;z-index: 9;width: 100%} 
 .banner-content h2 {color: #fff;font-size: 88px;text-transform: uppercase;line-height: 1.3;margin: 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;max-width: 55%;} 
 .banner-content h2 strong {background: #ce171e;position: relative;font-weight: 400;-moz-transform: skew(-12deg, 0deg);-webkit-transform: skew(-12deg, 0deg);-o-transform: skew(-12deg, 0deg);-ms-transform: skew(-12deg, 0deg);transform: skew(-12deg, 0deg);display: inline-block;max-width: max-content;padding: 0px 10px;margin-left: -10px;}
-.buttons { float: left; margin: 30px 0px 0px 0px; }
+.buttons {float: left;margin: 30px 0px 0px 0px;}
 .btn { font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; color: #fff; text-transform: uppercase; text-align: center; background: #000; font-size: 19px; padding: 13px 55px; border-radius: 10px; float: left; margin: 0px 30px 0px 0px; } 
 .btn:hover, .btn:focus { color: #fff; text-decoration: none; outline: none; } 
 .btn.btn-red {background: rgb(147,26,46);background: linear-gradient(45deg, #931a2e 0%, #103A5B 80%);} 
@@ -9460,6 +9460,40 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 .copy .dev a { font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-size: 17px; color: #fff; } 
 .sobre-footer {float: left;width: 35%;margin: 0px 5% 0px 0px;} .info-footer {float: left;width: 30%;margin: 0px 5% 0px 0px;} 
 .siga { width: 20%; float: left; }
+
+
+/*Quem Somos*/
+.cbf { float: left; width: 100%; padding: 80px 0px; }
+.cbf h2 { text-transform: uppercase; font-size: 90px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; margin: 0px 0px 60px 0px; line-height: 1; color: rgb(38 47 62 / 15%); } 
+.cbf-head { position: absolute; top: 50px; } 
+.cbf-head p { color: #262f3e; text-transform: uppercase; font-weight: 600; font-size: 16px; margin: 15px 0px 0px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; line-height: 1.3; }
+
+/* Patrocinadores */
+.flex { display: flex; flex-wrap: wrap; justify-content: center; }
+.page-template-template-patrocinadores .item-patro { margin: 0px; }
+.page-template-template-patrocinadores .box-pq {background-color: #f1f1f1;display: block;padding: 72.5px 20px 130px;margin-bottom: 80px;clear: both;} 
+.page-template-template-patrocinadores .box-pq h3 {color: #262f3e;text-transform: uppercase;font-weight: 600;font-size: 48px;margin: 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;width: 70%;line-height: 1.3;} 
+.page-template-template-patrocinadores .box-pq p {color: #262f3e;max-width: 45%;font-family: "Open Sans", sans-serif;font-optical-sizing: auto;font-size: 20px;}
+
+/* Contato */
+.contato-page { float: left; width: 100%; padding: 80px 0px; position: relative; }
+.contato-head { position: absolute; top: 105px; margin-left: 12px; } 
+.contato-head p{color: #262f3e;text-transform: uppercase;font-weight: 600;font-size: 38px;margin: 75px 0px 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;width: 70%;line-height: 1.3;} 
+.contato-page h2 {text-transform: uppercase;font-size: 190px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;margin: 0px 0px 60px 0px;line-height: 1;color: rgb(38 47 62 / 15%);}
+#form-contact .dados { border: 2px solid #dfe0e2; border-radius: 5px; width: 100%; padding: 10px; margin: 0px 0px 10px 0px; } 
+#form-contact textarea { border: 2px solid #dfe0e2; border-radius: 5px; width: 100%; padding: 10px; margin: 0px 0px 10px 0px; resize: none; height: 120px; color: #000; } 
+#form-contact textarea:focus, #form-contact input:focus { outline: none; }
+#form-contact .btn.btn-red { float: right; border: none; margin: 0px; } 
+.comp {color: #262f3e;font-weight: 400;border-left: 1px solid #ccc;} 
+.comp h5 { font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-size: 19px; margin: 0px 0px 26px 0px; } 
+.comp ul { margin: 0px; padding: 0px; list-style: none; } 
+.comp ul li {display: inline-block;width: 40px;height: 40px;text-align: center;background: #0093ba;border-radius: 100%;line-height: 2.8;margin: 0px 20px 20px 0px;} 
+.comp ul li i { font-size: 20px; color:#fff; } .comp ul li:last-child { background: #b01d23; } .comp ul li:hover, .comp ul li a:hover { opacity: 0.8; color: #fff; } 
+.comp a {color: #081224;} 
+.comp a:hover, .comp a:focus { outline: none; font-weight: 600; text-decoration: none; }
+.map { margin: 30px 0px 30px 0px; display: block; color: #262f3e; font-weight: bold; } 
+.map:hover, .map:focus { text-decoration: none; outline: none; color: #0093ba; }
+
 
 
 @media only screen and (max-width: 1780px) and (min-width: 1500px) {
@@ -9598,6 +9632,7 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 @media (max-width: 576px) {
     header .logo { padding: 0px 0px 0px 15px; } 
     .menu-principal-en-container, .menu-principal-container { display: none; } 
+    .idiomas { padding: 0px 15px 0px 0px; }
     .wpml-ls-legacy-list-horizontal { padding: 0px 16px 0px 0px; } 
     .banner-content h2 { max-width: 100%; font-size: 35px; color: #000; text-align: center; } 
     .banner-content {position: relative;top: 0;padding: 35px 15px 40px;} 
@@ -9625,7 +9660,7 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 
     .futuro h2 { font-size: 25px; } 
     .futuro img { max-width: 100%; height: auto; margin-bottom: 50px; } 
-    .box-futuro { bottom: 70px; } .futuro { padding: 50px 0px 0px; } 
+    .box-futuro { bottom: 70px; } .futuro {padding: 50px 0px 15px;} 
 
     .placares p { font-size: 20px; } 
 

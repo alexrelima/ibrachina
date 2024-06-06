@@ -19,7 +19,7 @@
 				<div class="content-footer">
 					<p><?php esc_html_e( 'Nosso espaço dispõe de climatizadores, estrutura para som e iluminação, sala VIP, sala de imprensa, churrasqueira, salas multiuso, estacionamento, vestiários, acessibilidade, entre outros', 'ibrachina' ); ?>.</p>
 
-					<p>Tel: <a href="">(11) 2605-3903</a>
+					<p>Tel: <a href="">+55 (11) 2605-3903</a>
 						<p>E-mail: contato@ibrachinaarena.com.br</p>
 						<p><?php esc_html_e( 'Horário', 'ibrachina' ); ?>: <?php esc_html_e( 'Segunda a Sexta', 'ibrachina' ); ?> das 09h às 23h<br>
 						<?php esc_html_e( 'Sábado e Domingo', 'ibrachina' ); ?> das 09h às 21h</p>

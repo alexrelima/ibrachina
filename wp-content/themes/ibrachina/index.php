@@ -24,30 +24,7 @@
 	<?php endwhile; wp_reset_query();?>
 </div>
 
-<div class="sobre">
-	<?php $my_query = new WP_Query('page_id=53');
-		while ($my_query->have_posts()) : $my_query->the_post();
-		$do_not_duplicate = $post->ID;
-
-		$image = get_field('imagem_de_destaque');
-		$logotipo = get_field('logotipo');
-	?>
-		<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="img-responsive sobre-img">
-		<div class="logo-vertical">
-			<img src="<?php echo esc_url($logotipo['url']); ?>" alt="<?php echo esc_attr($logotipo['alt']); ?>" class="img-responsive">
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col col-xs-12 col-sm-offset-6 col-sm-6 col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6">
-					<span><?php esc_html_e( 'Bem Vindo', 'ibrachina' ); ?></span>
-					<?php the_content();?>
-
-					<a href="" class="btn btn-red"><?php esc_html_e( 'Saiba Mais', 'ibrachina' ); ?></a>
-				</div>
-			</div>
-		</div>
-	<?php endwhile; wp_reset_query();?>
-</div>
+<?php get_template_part('parts/sobre');?>
 
 <div class="porque">
 	<?php $my_query = new WP_Query('page_id=69');
@@ -152,29 +129,25 @@
 					<?php the_content();?>
 				</div>
 				<?php if( have_rows('patrocinadores') ): ?>
-						<?php while( have_rows('patrocinadores') ): the_row(); $patro = get_sub_field('logotipo');?>
-							<div class="item-patro">
-								 <?php echo wp_get_attachment_image( $patro, 'full' ); ?>
+						<?php  $i = 1; while( have_rows('patrocinadores') ): the_row();  $patro = get_sub_field('logotipo');?>
+							<div class="item-patro <?php echo $i;?>">
+								<a href="<?php echo esc_attr( get_sub_field('link_de_redirecionamento') ); ?>" target="_blank">
+									<?php echo wp_get_attachment_image( $patro, 'full' ); ?>
+								</a>
 							</div>
-						<?php endwhile; ?>
+
+							<?php if ($i == 4){
+								break;
+							}?>
+							
+						<?php $i = $i + 1; endwhile; ?>
 				<?php endif; ?>
-				<a href="#" class="btn btn-red"><?php esc_html_e( 'Faça Parte', 'ibrachina' ); ?></a>
+				<a href="<?php the_permalink();?>" class="btn btn-red"><?php esc_html_e( 'Faça Parte', 'ibrachina' ); ?></a>
 			<?php endwhile; wp_reset_query();?>
 		</div>
 	</div>
 </div>
 
-<div class="insta">
-	<div class="container">
-		<div class="row">
-			<h2><strong>+10K</strong> <?php esc_html_e( 'de', 'ibrachina' ); ?> <strong><?php esc_html_e( 'Seguidores', 'ibrachina' ); ?></strong> <?php esc_html_e( 'nas Redes', 'ibrachina' ); ?></h2>
-			<?php echo do_shortcode('[instagram-feed feed=1]')?>
-		</div>
-	</div>
-</div>
 
-
-
-
-
+<?php get_template_part('parts/insta');?>
 <?php get_footer();?>
