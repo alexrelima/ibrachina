@@ -8306,7 +8306,6 @@ html {
 }
 
 body {
-    /* font-family:'Raleway'; */
     font-size: 16px;
     line-height: 1.42857143;
     color: #333;
@@ -9363,7 +9362,7 @@ hr {
 #menu-principal-en li:first-child a { margin: 0px; }
 
 
-header {background: #000;float: left;width: 100%;}
+header {background: #000;float: left;width: 100%;position: relative;}
 header:after { content: ""; width: 100%; height: 6px; background: #fff; float: left; background: rgb(176,29,35); background: linear-gradient(90deg, rgba(176,29,35,1) 0%, rgba(83,147,184,1) 100%); }
 .header-content { float: right; } .idiomas a {margin: 0px 0px 0px 5px;} 
 .idiomas a:hover, .idiomas a:focus { opacity: 0.8; text-decoration: none; outline: none; }
@@ -9371,6 +9370,9 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 .wpml-ls-item-en{background: url('images/us.png');width: 36px;height: 28px;margin: 0px 0px 0px 10px!important;}
 .wpml-ls-item-pt-br a, .wpml-ls-item-en a { color: transparent; font-size: 1px; float: left; height: 100%; width: 100%; margin: 0px; }
 .wpml-ls-legacy-list-horizontal { padding: 0px!important; }
+
+.menu-open_header { display: none; }
+.side-menu-wrapper_header{display: none!important;background: rgb(255 255 255 / 95%);padding: 25px 15px 0 20px;position:fixed;top:0;right:0;height:100%;z-index:2;transition:.5s;width:330px;font-size:20px;box-sizing:border-box;overflow-x:hidden;overflow-y:auto;z-index:9999;}
 
 
 
@@ -9436,6 +9438,7 @@ header:after { content: ""; width: 100%; height: 6px; background: #fff; float: l
 .patro-head h3 {color: #262f3e;text-transform: uppercase;font-weight: 600;font-size: 38px;margin: 15px 0px 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;width: 70%;line-height: 1.3;}
 .patro-head h3 strong{font-style:normal;}
 .item-patro {width: 25%;border: 1px solid #ccc;float: left;text-align: center;padding: 117px 0px;margin: 0px 0px 40px 0px;}
+.item-patro img { margin: 0 auto; }
 .patrocinadores .btn {margin: 0px;max-width: 225px;margin: 0 auto;display: block;float: none;clear: both;}
 
 .insta { float: left; width: 100%; padding: 0px 0px 40px 0px; }
@@ -9471,13 +9474,13 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 /* Patrocinadores */
 .flex { display: flex; flex-wrap: wrap; justify-content: center; }
 .page-template-template-patrocinadores .item-patro { margin: 0px; }
-.page-template-template-patrocinadores .box-pq {background-color: #f1f1f1;display: block;padding: 72.5px 20px 130px;margin-bottom: 80px;clear: both;} 
+.page-template-template-patrocinadores .box-pq {background-color: #f1f1f1;display: block;padding: 72.5px 40px 130px;margin-bottom: 80px;clear: both;} 
 .page-template-template-patrocinadores .box-pq h3 {color: #262f3e;text-transform: uppercase;font-weight: 600;font-size: 48px;margin: 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;width: 70%;line-height: 1.3;} 
 .page-template-template-patrocinadores .box-pq p {color: #262f3e;max-width: 45%;font-family: "Open Sans", sans-serif;font-optical-sizing: auto;font-size: 20px;}
 
 /* Contato */
 .contato-page { float: left; width: 100%; padding: 80px 0px; position: relative; }
-.contato-head { position: absolute; top: 105px; margin-left: 12px; } 
+.contato-head {position: absolute;top: 105px;margin-left: 12px;width: 100%;} 
 .contato-head p{color: #262f3e;text-transform: uppercase;font-weight: 600;font-size: 38px;margin: 75px 0px 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;width: 70%;line-height: 1.3;} 
 .contato-page h2 {text-transform: uppercase;font-size: 190px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;margin: 0px 0px 60px 0px;line-height: 1;color: rgb(38 47 62 / 15%);}
 #form-contact .dados { border: 2px solid #dfe0e2; border-radius: 5px; width: 100%; padding: 10px; margin: 0px 0px 10px 0px; } 
@@ -9494,11 +9497,47 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 .map { margin: 30px 0px 30px 0px; display: block; color: #262f3e; font-weight: bold; } 
 .map:hover, .map:focus { text-decoration: none; outline: none; color: #0093ba; }
 
+/* Instalacoes */
+.btn.btn-red.waze { color: #fff; }
+.instalacoes-title { color: #262f3e; text-transform: uppercase; font-weight: 600; font-size: 38px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; margin: 80px 0px 30px; }
+.owl-instalacoes.owl-carousel { display: block; }
+.owl-carousel.owl-instalacoes .owl-item img { border: 1px solid #ccc; border-radius: 5px; }
+
+
+/* Escola de Futebol */
+.atletas-ibra { float: left; width: 100%; padding: 80px 0px; } 
+.tabs-content {padding: 40px 20px 0px;background: #f1f1f1;border-radius: 5px;clear: both;} 
+.tabs .tab-opt ul li {list-style: none;display: inline-block;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;color: #fff;text-transform: uppercase;text-align: center;font-size: 16px;padding: 13px 55px;border-radius: 10px;float: left;margin: 0px 20px 0px 0px;background: transparent;border: 1px solid #ccc;} 
+.tabs .tab-opt ul li a { color: #333; text-decoration: none; padding: 2px 10px; } 
+.tabs .tab-opt ul li.active a {color: #fff;} /* --- Plugin --- */
+.tabs-content > div { display: none; } .tabs-content > div:first-child { display: block; }
+.tabs .tab-opt ul li.active { font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; color: #fff; text-transform: uppercase; text-align: center; font-size: 16px; padding: 13px 55px; border-radius: 10px; float: left; margin: 0px 20px 0px 0px; background: rgb(147, 26, 46); background: linear-gradient(45deg, #931a2e 0%, #103A5B 80%); } 
+.tab-opt {margin-bottom: 25px;display: flex;}
+.tab-opt ul {margin: 0px;padding: 0px;} 
+.flex-tabs { display: flex; } 
+.jogador {margin: 0px 10px 40px;} 
+.jogador img { border-radius: 5px; }
+
+.atletas-ibra h2 { text-transform: uppercase; font-size: 120px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; margin: 0px 0px 60px 0px; line-height: 1; color: rgb(38 47 62 / 15%); } 
+.jogador h3 { text-align: center; margin: 20px 0px 0px 0px; color: #262f3e; text-transform: uppercase; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 700; font-size: 22px; }
+.atletas-ibra h4 { margin: 0px; text-align: center; color: #262f3e; text-transform: uppercase; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 700; } 
+.atletas-ibra h5 { margin: 0px; text-align: center; color: #262f3e; text-transform: uppercase; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 700; }
+
+.convert { padding: 80px 0px 0px; }
+.page-template-template-escola .convert .box-pq {background-color: #f1f1f1;display: block;padding: 72.5px 40px 130px;margin-bottom: 0px;clear: both;} 
+.page-template-template-escola .convert .box-pq h3 {color: #262f3e;text-transform: uppercase;font-weight: 600;font-size: 48px;margin: 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;width: 70%;line-height: 1.3;} 
+.page-template-template-escola .convert .box-pq p {color: #262f3e;max-width: 45%;font-family: "Open Sans", sans-serif;font-optical-sizing: auto;font-size: 20px;}
+
+
 
 
 @media only screen and (max-width: 1780px) and (min-width: 1500px) {
     .banner-content { top: 200px; }
     .sobre .sobre-img { left: -150px; }
+
+    /* instalacoes */
+    .contato-page h2 { font-size: 170px; } 
+    .contato-head { margin: 0px; width: 95%; }
 }
 
 @media only screen and (max-width: 1499px) and (min-width: 1200px) {
@@ -9515,8 +9554,16 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     .box-pq { background-size: 50% 100%; } 
     .box-itens img { margin: 0px 25px 35px 0px; }
     .patrocinadores { padding: 80px 15px; } 
+    .patrocinadores h2 { font-size: 150px; }
     .insta {padding: 0px 15px;} 
     footer .container { padding: 0px 30px; }
+
+    /* Escola de futebol */
+    .atletas-ibra { padding: 80px 20px; }
+
+    /* instalacoes */
+    .contato-page h2 { font-size: 150px; } .contato-page { padding: 80px 15px; } 
+    .contato-head { margin: 0px; width: 95%; }
 } 
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
@@ -9530,7 +9577,7 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     #menu-principal-en li a { margin: 0px 0px 0px 25px; } 
     .banner-content h2 { font-size: 50px; } 
     .banner-content {top: 150px;padding: 0px 15px;} 
-    .sobre .sobre-img { left: -280px; } 
+    .sobre .sobre-img {left: -180px;} 
     .sobre span { margin: 50px 0px 0px 70px; } 
     .sobre p { margin-left: 95px; } 
     .sobre .btn { margin: 40px 0px 0px 70px; } 
@@ -9540,6 +9587,16 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     .box-itens .col { padding: 0px; position: relative; z-index: 10; } 
     .item-patro { padding: 60px 0px; } 
     .box-pq .atleta { right: -30px; width: 44%; bottom: -68px; }
+    .patrocinadores h2 { font-size: 130px; } 
+    .item-patro img { margin: 0 auto; }
+
+    /* Escola de futebol */
+    .atletas-ibra { padding: 80px 15px; }
+
+    /* instalacoes */
+    .contato-page h2 { font-size: 120px; margin: 0px 0px 100px 0px; } 
+    .contato-page { padding: 80px 15px; } 
+    .contato-head {top: 90px;margin-left: 0px;width: 95%;}
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -9547,10 +9604,41 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     .menu-principal-en-container, .menu-principal-container { display: none; } 
     .wpml-ls-legacy-list-horizontal { padding: 0px 16px 0px 0px; } 
     .banner-content h2 { font-size: 50px; } 
-    .banner-content { top: 120px; padding: 0px 15px; } 
+    .banner-content {top: 160px;padding: 0px 15px;} 
     .logo-vertical { display: none; } 
+    .side-menu-wrapper_header > ul{list-style:none;padding:0;margin:0;overflow-y:auto;height:95%}
+    .side-menu-wrapper_header > ul > li > a{display:block;border-bottom:1px solid #131313;padding:6px 4px;color:#989898;transition:.3s;text-decoration:none}
+    .side-menu-wrapper_header > a.menu-close_header{padding:8px 0 4px 23px;color:#6B6B6B;display:block;margin:-30px 0 -10px -20px;font-size:35px;text-decoration:none}
+    .side-menu-wrapper_header {display:block!important; opacity: 0;}
+    .side-menu-wrapper_header.active {opacity: 1;}
+    .menu-overlay_header { display: block; } 
+    .menu-close_header { display: block; }
+    .menu-open_header {display: block;color: #fff;font-size: 25px;position: absolute;right: 12px;top: 43px;}
+    .menu-open_header:focus, .menu-open_header:hover {color: #F3394E;outline: none;text-decoration: none;}
+    .side-menu-wrapper_header .menu-principal-container {display: block;margin-bottom: 20px;}
+    .side-menu-wrapper_header .menu-principal-en-container {display: block;margin-bottom: 20px;}
+    .side-menu-wrapper_header ul { list-style: none; padding: 0px; margin: 20px 0px 0px 0px; } 
+    .side-menu-wrapper_header ul li a {font-size: 17px;color: #262f3e;width: 100%;float: left;padding: 0px 0px 5px 0px;margin: 0px;font-weight: 800;text-transform: initial;font-family: "Oswald", sans-serif;font-optical-sizing: auto;} 
+    .side-menu-wrapper_header ul li ul a { font-weight: 400; }
+    .side-menu-wrapper_header ul li {width: 100%;float: left;border-bottom: 1px dashed #ccc;padding: 10px 0px;margin: 0px 0px 10px 0px;} 
+    .side-menu-wrapper_header ul li ul {margin: 15px 0px 0px 0px;padding: 0px 15px;float: left;/* display: none; */} 
+    .side-menu-wrapper_header ul li ul li:last-child {border: none;margin: 0px;padding: 10px 0px 0px;}
+    .side-menu-wrapper_header ul li a:hover, .side-menu-wrapper_header ul li a:focus {color: #ce171e;text-decoration: none;outline: none;font-size: 17px;width: 100%;float: left;padding: 0px 0px 5px 0px;margin: 0px;font-weight: 800;text-transform: initial;}
+    .side-menu-wrapper_header .p-whats {display: block;margin: 20px 0px 0px 0px;padding: 0px 0px 0px 0px;float: left;width: 100%;} 
+    .side-menu-wrapper_header .p-whats span { width: 100%; float: left; font-size: 15px; font-weight: 400;} 
+    .side-menu-wrapper_header .p-whats a {background: #42a92d;color: #fff;padding: 13px 20px;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 15px;font-weight: bold;float: left;width: 100%;text-align: center;position: relative;bottom: 0;right: 0;font-size: 16px;}
+    .side-menu-wrapper_header .p-whats a:hover, .side-menu-wrapper_header .p-whats a:focus {background: #34ab62;text-decoration: none;outline: none;}
+    .side-menu-wrapper_header .p-whats img { width: 16px; margin: -3px 0px 0px 4px; }
+    .side-menu-wrapper_header #menu-topo-1 li:last-child { border: none; background: #bf1f23; text-align: center; color: #fff; padding: 10px 0px; float: left; width: 100%; margin: 5px 0px 0px 0px; } 
+    .side-menu-wrapper_header #menu-topo-1 li:last-child a { color: #fff; line-height: 0; padding: 13px 0px; } 
+    .side-menu-wrapper_header .menu-topo-container { float: left; width: 100%; }
+    .side-menu-wrapper_header #menu-topo-1 { margin: 0px; }
+    .side-menu-wrapper_header.active .menu {display: block;}
+    .side-menu-wrapper_header .menu-principal-container ul li:last-child a:before {filter: brightness(0) saturate(100%) invert(5%) sepia(38%) saturate(0%) hue-rotate(110deg) brightness(96%) contrast(86%);}
+    header .side-menu-wrapper_header .wpp:hover, header .side-menu-wrapper_header .wpp:focus { background: #0e6e0f; color: #fff; }
+    .idiomas { padding: 0px 15px 0px 0px; }
 
-    .sobre .sobre-img { left: -290px; }
+    .sobre .sobre-img {left: -110px;}
     .sobre span { margin: 50px 0px 0px; } 
     .sobre p { max-width: 100%; text-shadow: 2px 2px 2px rgba(0,0,0,0.6); } 
     .sobre .btn { margin: 20px 0px 40px; } .porque { padding: 26px 15px; } 
@@ -9563,20 +9651,79 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     .box-itens img { margin: 0px 25px 20px; } 
     .futuro img { width: 100%; height: auto; } 
     .placares p { font-size: 27px; padding: 50px 15px 0px; } 
-    .patrocinadores h2 { font-size: 120px; text-align: left; margin: 0px 0px 130px; }
+    .patrocinadores h2 {font-size: 100px;text-align: left;margin: 0px 0px 130px;}
     .patro-head {top: 120px;} 
     .patrocinadores { padding: 50px 15px 80px; } 
     .item-patro { width: 50%; padding: 50px; margin: 0px; }
+    .item-patro img {margin: 0 auto;}
     .patrocinadores .btn { margin-top: 30px; display: inline-block; width: 50%; margin-left: calc(25% - 0px); max-width: 100%; } 
     .insta { padding: 0px 15px; } 
     footer .container { padding: 0px 30px; } 
     footer { background-size: 100% 100%; }
+
+
+    /* Sobre */
+    .cbf h2 { font-size: 50px; position: absolute; } 
+    .cbf-head { position: relative; top: 20px; }
+
+    /* Escola de futebol */
+    .atletas-ibra h2 { font-size: 90px; } 
+    .atletas-ibra { padding: 50px 15px; } 
+    .page-template-template-escola .convert .box-pq h3 {color: #fff;width: 100%;,max-block-size: ;} 
+    .page-template-template-escola .convert .box-pq p { color: #fff; max-width: 70%; } 
+    .page-template-template-escola .convert .box-pq { padding: 42.5px 40px 100px; }
+
+    /* Patrocinadores */
+    .page-template-template-patrocinadores .convert { padding: 0px 15px; } 
+    .page-template-template-patrocinadores .box-pq h3 {color: #fff;width: 100%;,max-block-size: ;} 
+    .page-template-template-patrocinadores .box-pq p { color: #fff; max-width: 70%; } 
+    .page-template-template-patrocinadores .box-pq { padding: 42.5px 40px 100px; } 
+
+    /* Instalacoes */
+    .contato-page { padding: 80px 15px; }
+    .contato-page h2 {font-size: 95px;margin: 0px 0px 100px 0px;} 
+    .contato-head {top: 65px;margin: 0px;width: 90%;}
+    
 }
 
 @media only screen and (max-width: 767px) and (min-width: 577px) {
     header .logo { padding: 0px 0px 0px 15px; } 
     .menu-principal-en-container, .menu-principal-container { display: none; } 
     .wpml-ls-legacy-list-horizontal { padding: 0px 16px 0px 0px; } 
+    .side-menu-wrapper_header > ul{list-style:none;padding:0;margin:0;overflow-y:auto;height:95%}
+    .side-menu-wrapper_header > ul > li > a{display:block;border-bottom:1px solid #131313;padding:6px 4px;color:#989898;transition:.3s;text-decoration:none}
+    .side-menu-wrapper_header > a.menu-close_header{padding:8px 0 4px 23px;color:#6B6B6B;display:block;margin:-30px 0 -10px -20px;font-size:35px;text-decoration:none}
+    .side-menu-wrapper_header {display:block!important; opacity: 0;}
+    .side-menu-wrapper_header.active {opacity: 1;}
+    .menu-overlay_header { display: block; } 
+    .menu-close_header { display: block; }
+    .menu-open_header {display: block;color: #fff;font-size: 25px;position: absolute;right: 12px;top: 43px;}
+    .menu-open_header:focus, .menu-open_header:hover {color: #F3394E;outline: none;text-decoration: none;}
+    .side-menu-wrapper_header .menu-principal-container {display: block;margin-bottom: 20px;}
+    .side-menu-wrapper_header .menu-principal-en-container {display: block;margin-bottom: 20px;}
+    .side-menu-wrapper_header ul { list-style: none; padding: 0px; margin: 20px 0px 0px 0px; } 
+    .side-menu-wrapper_header ul li a {font-size: 17px;color: #262f3e;width: 100%;float: left;padding: 0px 0px 5px 0px;margin: 0px;font-weight: 800;text-transform: initial;font-family: "Oswald", sans-serif;font-optical-sizing: auto;} 
+    .side-menu-wrapper_header ul li ul a { font-weight: 400; }
+    .side-menu-wrapper_header ul li {width: 100%;float: left;border-bottom: 1px dashed #ccc;padding: 10px 0px;margin: 0px 0px 10px 0px;} 
+    .side-menu-wrapper_header ul li ul {margin: 15px 0px 0px 0px;padding: 0px 15px;float: left;/* display: none; */} 
+    .side-menu-wrapper_header ul li ul li:last-child {border: none;margin: 0px;padding: 10px 0px 0px;}
+    .side-menu-wrapper_header ul li a:hover, .side-menu-wrapper_header ul li a:focus {color: #ce171e;text-decoration: none;outline: none;font-size: 17px;width: 100%;float: left;padding: 0px 0px 5px 0px;margin: 0px;font-weight: 800;text-transform: initial;}
+    .side-menu-wrapper_header .p-whats {display: block;margin: 20px 0px 0px 0px;padding: 0px 0px 0px 0px;float: left;width: 100%;} 
+    .side-menu-wrapper_header .p-whats span { width: 100%; float: left; font-size: 15px; font-weight: 400;} 
+    .side-menu-wrapper_header .p-whats a {background: #42a92d;color: #fff;padding: 13px 20px;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 15px;font-weight: bold;float: left;width: 100%;text-align: center;position: relative;bottom: 0;right: 0;font-size: 16px;}
+    .side-menu-wrapper_header .p-whats a:hover, .side-menu-wrapper_header .p-whats a:focus {background: #34ab62;text-decoration: none;outline: none;}
+    .side-menu-wrapper_header .p-whats img { width: 16px; margin: -3px 0px 0px 4px; }
+    .side-menu-wrapper_header #menu-topo-1 li:last-child { border: none; background: #bf1f23; text-align: center; color: #fff; padding: 10px 0px; float: left; width: 100%; margin: 5px 0px 0px 0px; } 
+    .side-menu-wrapper_header #menu-topo-1 li:last-child a { color: #fff; line-height: 0; padding: 13px 0px; } 
+    .side-menu-wrapper_header .menu-topo-container { float: left; width: 100%; }
+    .side-menu-wrapper_header #menu-topo-1 { margin: 0px; }
+    .side-menu-wrapper_header.active .menu {display: block;}
+    .side-menu-wrapper_header .menu-principal-container ul li:last-child a:before {filter: brightness(0) saturate(100%) invert(5%) sepia(38%) saturate(0%) hue-rotate(110deg) brightness(96%) contrast(86%);}
+    header .side-menu-wrapper_header .wpp:hover, header .side-menu-wrapper_header .wpp:focus { background: #0e6e0f; color: #fff; }
+    .idiomas { padding: 0px 15px 0px 0px; }
+
+
+
     .banner-content h2 {max-width: 100%;font-size: 50px;color: #000;text-align: center;} 
     .banner-content {position: relative;top: 0;padding: 35px 15px 40px;} 
     .btn { font-size: 16px; width: 48%; margin: 0px 1%; padding: 13px; } 
@@ -9608,9 +9755,11 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     .placares p { font-size: 20px; } 
 
     .patro-head {top: 77px;margin-left: 0;} 
-    .patrocinadores h2 {font-size: 90px;margin: 0px 0px 65px 0px;} 
+    .patrocinadores h2 {font-size: 75px;margin: 0px 0px 65px 0px;} 
     .patrocinadores { padding: 50px 15px; } .patro-head h3 { font-size: 25px; width: 100%; margin: 0px; } 
     .item-patro { width: 50%; padding: 40px; margin: 0px; } 
+    .item-patro img {margin: 0 auto;}
+    .page-template-template-patrocinadores .item-patro img { margin: 0 auto; }
     .patrocinadores .btn {margin-top: 30px;display: inline-block;width: 50%;margin-left: calc(25% - 0px);max-width: 100%;} 
 
     .insta { padding: 0px 15px; } 
@@ -9627,6 +9776,59 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     footer ul li { margin: 0px 20px 20px 0px; }
     footer a { font-size: 15px; } 
     footer ul li a { font-size: 17px; }
+
+
+    /* Escola de Futebol */
+    .tabs .tab-opt ul { padding-left: 0; } 
+    .tabs .tab-opt ul li a { display: block; width: 100%; }
+
+
+    /*Quem Somos*/
+    .cbf { padding: 30px 0px; }
+    .cbf h2 {font-size: 55px;text-align: left;margin: 0px 0px 0px;position: absolute;} 
+    .cbf-head {position: relative;top: 25px;} 
+    .cbf img { margin: 0 auto; float: none; display: block; margin-top: 30px; }
+
+
+
+    /* Escola de Futebol */
+    .tabs .tab-opt ul { padding-left: 0; } 
+    .tabs .tab-opt ul li a { display: block; width: 100%; }
+    .atletas-ibra { padding: 30px 15px; } 
+    .atletas-ibra h2 { font-size: 55px; text-align: left; margin: 0px 0px 30px; } 
+    .tabs .tab-opt ul li.active { padding: 5px; margin: 0px 8px 8px 0px; } 
+    .tabs .tab-opt ul li { padding: 5px; margin: 0px 8px 8px 0px; } 
+    .page-template-template-escola .convert .box-pq h3 { font-size: 24px; width: 100%; color: #fff; } 
+    .page-template-template-escola .convert .box-pq { padding: 32.5px 20px 90px; } 
+    .page-template-template-escola .convert .box-pq p { max-width: 100%; font-size: 18px; color: #fff; } 
+    .page-template-template-escola .btn.btn-red { width: 100%; } .convert { padding: 50px 0px 30px; }
+    .page-template-template-escola .convert { margin: 50px 0px 20px 0px; padding: 0px; }
+
+    /* Instalacoes */
+    .contato-page h2 {font-size: 45px;text-align: left;margin: 0px 0px 80px;}
+    .contato-page { padding: 30px 15px; }
+    .contato-head p { font-size: 25px; margin: 20px 0px; width: 100%; }
+    .contato-head {margin: 0px;top: 65px;width: calc(100% - 15px);}
+    .comp { border-left: 0px; margin: 30px 0px 0px 0px; } 
+    .instalacoes-title { font-size: 25px; margin: 50px 0px 15px; }
+    .page-template-template-instalacoes .contato-head p {margin: -10px 0px 0px;} 
+    .page-template-template-instalacoes .contato-page .col {padding: 0px;}
+
+
+    /* Patrocinadores */
+    .page-template-template-patrocinadores .box-pq h3 { font-size: 24px; width: 100%; color: #fff; } 
+    .page-template-template-patrocinadores .box-pq {padding: 32.5px 40px 80px;margin-bottom: 50px;} 
+    .convert { padding: 0px 15px; } 
+    .page-template-template-patrocinadores .box-pq p { max-width: 100%; font-size: 18px; color: #fff; }
+    .page-template-template-patrocinadores .box-pq .btn { width: 100%; }
+
+
+    /* Contato */
+    .page-template-template-contato .contato-page h2 {font-size: 90px;text-align: left;margin: 0px 0px 50px;} 
+    .page-template-template-contato .contato-head p { font-size: 20px; margin: 0px; width: 60%; }
+    .page-template-template-contato .contato-page .col { padding: 0px; }
+    .contato-head { top: 95px; }
+
 }
 
 @media (max-width: 576px) {
@@ -9634,6 +9836,39 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     .menu-principal-en-container, .menu-principal-container { display: none; } 
     .idiomas { padding: 0px 15px 0px 0px; }
     .wpml-ls-legacy-list-horizontal { padding: 0px 16px 0px 0px; } 
+    .side-menu-wrapper_header > ul{list-style:none;padding:0;margin:0;overflow-y:auto;height:95%}
+    .side-menu-wrapper_header > ul > li > a{display:block;border-bottom:1px solid #131313;padding:6px 4px;color:#989898;transition:.3s;text-decoration:none}
+    .side-menu-wrapper_header > a.menu-close_header{padding:8px 0 4px 23px;color:#6B6B6B;display:block;margin:-30px 0 -10px -20px;font-size:35px;text-decoration:none}
+    .side-menu-wrapper_header {display:block!important; opacity: 0;}
+    .side-menu-wrapper_header.active {opacity: 1;}
+    .menu-overlay_header { display: block; } 
+    .menu-close_header { display: block; }
+    .menu-open_header {display: block;color: #fff;font-size: 25px;position: absolute;right: 12px;top: 43px;}
+    .menu-open_header:focus, .menu-open_header:hover {color: #F3394E;outline: none;text-decoration: none;}
+    .side-menu-wrapper_header .menu-principal-container {display: block;margin-bottom: 20px;}
+    .side-menu-wrapper_header .menu-principal-en-container {display: block;margin-bottom: 20px;}
+    .side-menu-wrapper_header ul { list-style: none; padding: 0px; margin: 20px 0px 0px 0px; } 
+    .side-menu-wrapper_header ul li a {font-size: 17px;color: #262f3e;width: 100%;float: left;padding: 0px 0px 5px 0px;margin: 0px;font-weight: 800;text-transform: initial;font-family: "Oswald", sans-serif;font-optical-sizing: auto;} 
+    .side-menu-wrapper_header ul li ul a { font-weight: 400; }
+    .side-menu-wrapper_header ul li {width: 100%;float: left;border-bottom: 1px dashed #ccc;padding: 10px 0px;margin: 0px 0px 10px 0px;} 
+    .side-menu-wrapper_header ul li ul {margin: 15px 0px 0px 0px;padding: 0px 15px;float: left;/* display: none; */} 
+    .side-menu-wrapper_header ul li ul li:last-child {border: none;margin: 0px;padding: 10px 0px 0px;}
+    .side-menu-wrapper_header ul li a:hover, .side-menu-wrapper_header ul li a:focus {color: #ce171e;text-decoration: none;outline: none;font-size: 17px;width: 100%;float: left;padding: 0px 0px 5px 0px;margin: 0px;font-weight: 800;text-transform: initial;}
+    .side-menu-wrapper_header .p-whats {display: block;margin: 20px 0px 0px 0px;padding: 0px 0px 0px 0px;float: left;width: 100%;} 
+    .side-menu-wrapper_header .p-whats span { width: 100%; float: left; font-size: 15px; font-weight: 400;} 
+    .side-menu-wrapper_header .p-whats a {background: #42a92d;color: #fff;padding: 13px 20px;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 15px;font-weight: bold;float: left;width: 100%;text-align: center;position: relative;bottom: 0;right: 0;font-size: 16px;}
+    .side-menu-wrapper_header .p-whats a:hover, .side-menu-wrapper_header .p-whats a:focus {background: #34ab62;text-decoration: none;outline: none;}
+    .side-menu-wrapper_header .p-whats img { width: 16px; margin: -3px 0px 0px 4px; }
+    .side-menu-wrapper_header #menu-topo-1 li:last-child { border: none; background: #bf1f23; text-align: center; color: #fff; padding: 10px 0px; float: left; width: 100%; margin: 5px 0px 0px 0px; } 
+    .side-menu-wrapper_header #menu-topo-1 li:last-child a { color: #fff; line-height: 0; padding: 13px 0px; } 
+    .side-menu-wrapper_header .menu-topo-container { float: left; width: 100%; }
+    .side-menu-wrapper_header #menu-topo-1 { margin: 0px; }
+    .side-menu-wrapper_header.active .menu {display: block;}
+    .side-menu-wrapper_header .menu-principal-container ul li:last-child a:before {filter: brightness(0) saturate(100%) invert(5%) sepia(38%) saturate(0%) hue-rotate(110deg) brightness(96%) contrast(86%);}
+    header .side-menu-wrapper_header .wpp:hover, header .side-menu-wrapper_header .wpp:focus { background: #0e6e0f; color: #fff; }
+    
+
+    
     .banner-content h2 { max-width: 100%; font-size: 35px; color: #000; text-align: center; } 
     .banner-content {position: relative;top: 0;padding: 35px 15px 40px;} 
     .btn { font-size: 16px; width: 48%; margin: 0px 1%; padding: 13px; } 
@@ -9660,14 +9895,14 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 
     .futuro h2 { font-size: 25px; } 
     .futuro img { max-width: 100%; height: auto; margin-bottom: 50px; } 
-    .box-futuro { bottom: 70px; } .futuro {padding: 50px 0px 15px;} 
+    .box-futuro { bottom: 70px; } .futuro {padding: 50px 15px 15px;} 
 
     .placares p { font-size: 20px; } 
 
     .patro-head {top: 77px;margin-left: 0;} 
     .patrocinadores h2 { font-size: 48px; margin: 0px 0px 105px 0px; } 
     .patrocinadores { padding: 50px 15px; } .patro-head h3 { font-size: 25px; width: 100%; margin: 0px; } 
-    .item-patro { width: 50%; padding: 40px; margin: 0px; } 
+    .item-patro {width: 50%;padding: 40px 10px;margin: 0px;} 
     .patrocinadores .btn {margin-top: 30px;display: inline-block;width: 50%;margin-left: calc(25% - 0px);} 
 
     .insta { padding: 0px 15px; } 
@@ -9684,6 +9919,51 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
     footer ul li { margin: 0px 20px 20px 0px; }
     footer a { font-size: 15px; } 
     footer ul li a { font-size: 17px; }
+
+    /*Quem Somos*/
+    .cbf { padding: 30px 0px; }
+    .cbf h2 { font-size: 35px; text-align: left; margin: 0px 0px 0px; position: absolute; } 
+    .cbf-head { position: relative; top: 10px; } 
+    .cbf img { margin: 0 auto; float: none; display: block; margin-top: 30px; }
+
+
+
+    /* Escola de Futebol */
+    .tabs .tab-opt ul { padding-left: 0; } 
+    .tabs .tab-opt ul li a { display: block; width: 100%; }
+    .atletas-ibra { padding: 30px 15px; } 
+    .atletas-ibra h2 { font-size: 55px; text-align: left; margin: 0px 0px 30px; } 
+    .tabs .tab-opt ul li.active { padding: 5px; margin: 0px 8px 8px 0px; } 
+    .tabs .tab-opt ul li { padding: 5px; margin: 0px 8px 8px 0px; } 
+    .page-template-template-escola .convert .box-pq h3 { font-size: 24px; width: 100%; color: #fff; } 
+    .page-template-template-escola .convert .box-pq { padding: 32.5px 20px 90px; } 
+    .page-template-template-escola .convert .box-pq p { max-width: 100%; font-size: 18px; color: #fff; } 
+    .page-template-template-escola .btn.btn-red { width: 100%; } .convert { padding: 50px 0px 30px; }
+    .page-template-template-escola .convert { margin: 50px 0px 20px 0px; padding: 0px; }
+
+    /* Instalacoes */
+    .contato-page h2 {font-size: 45px;text-align: left;margin: 0px 0px 80px;}
+    .contato-page { padding: 30px 15px; }
+    .contato-head p { font-size: 25px; margin: 20px 0px; width: 100%; }
+    .contato-head {margin: 0px;top: 65px;width: calc(100% - 15px);}
+    .comp { border-left: 0px; margin: 30px 0px 0px 0px; } 
+    .instalacoes-title { font-size: 25px; margin: 50px 0px 15px; }
+    .page-template-template-instalacoes .contato-head p {margin: -10px 0px 0px;} 
+    .page-template-template-instalacoes .contato-page .col {padding: 0px;}
+
+
+    /* Patrocinadores */
+    .page-template-template-patrocinadores .box-pq h3 { font-size: 24px; width: 100%; color: #fff; } 
+    .page-template-template-patrocinadores .box-pq {padding: 32.5px 40px 80px;margin-bottom: 50px;} 
+    .convert { padding: 0px 15px; } 
+    .page-template-template-patrocinadores .box-pq p { max-width: 100%; font-size: 18px; color: #fff; }
+    .page-template-template-patrocinadores .box-pq .btn { width: 100%; }
+
+
+    /* Contato */
+    .page-template-template-contato .contato-page h2 { font-size: 55px; text-align: left; margin: 0px 0px 60px; } 
+    .page-template-template-contato .contato-head p { font-size: 20px; margin: 0px; width: 60%; }
+    .page-template-template-contato .contato-page .col { padding: 0px; }
 }
 
 @media (max-width: 360px) {

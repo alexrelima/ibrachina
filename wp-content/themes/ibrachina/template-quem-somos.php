@@ -15,7 +15,7 @@ get_header();?>
 			<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<?php 
 				    $cbf = get_field('imagem_cbf');
-				    echo wp_get_attachment_image( $cbf, 'full' ); 
+				    echo wp_get_attachment_image( $cbf, 'full', false, array('class' => 'img-responsive') ); 
 				?>
 			</div>
 		</div>

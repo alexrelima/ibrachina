@@ -1,11 +1,11 @@
 {
-    "key": "group_665f35431f028",
-    "title": "Why",
+    "key": "group_66632cd18dc5e",
+    "title": "Instalações",
     "fields": [
         {
-            "key": "field_665f354321b68",
-            "label": "Atleta",
-            "name": "atleta",
+            "key": "field_66632d01bdc1b",
+            "label": "Imagem de destaque",
+            "name": "imagem_de_destaque",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -28,9 +28,9 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_665f3543256e3",
-            "label": "Motivos",
-            "name": "motivos",
+            "key": "field_66632cd3bdc19",
+            "label": "Instalações",
+            "name": "instalacoes",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -44,15 +44,15 @@
             "layout": "table",
             "pagination": 0,
             "min": 0,
-            "max": 4,
+            "max": 0,
             "collapsed": "",
             "button_label": "Adicionar linha",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_665f35432d203",
-                    "label": "Imagem de destaque",
-                    "name": "imagem_de_destaque",
+                    "key": "field_66632cf2bdc1a",
+                    "label": "Foto",
+                    "name": "foto",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -73,49 +73,7 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium",
-                    "parent_repeater": "field_665f3543256e3"
-                },
-                {
-                    "key": "field_665f354330bc0",
-                    "label": "Título",
-                    "name": "titulo",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_665f3543256e3"
-                },
-                {
-                    "key": "field_665f3543347b0",
-                    "label": "Conteúdo",
-                    "name": "conteudo",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_665f3543256e3"
+                    "parent_repeater": "field_66632cd3bdc19"
                 }
             ]
         }
@@ -123,9 +81,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "92"
+                "value": "template-instalacoes.php"
             }
         ]
     ],
@@ -138,5 +96,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1717778773
+    "modified": 1717776281
 }

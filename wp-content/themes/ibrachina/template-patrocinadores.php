@@ -15,7 +15,7 @@ get_header();?>
 				<?php  while( have_rows('patrocinadores') ): the_row();  $patro = get_sub_field('logotipo');?>
 				<div class="item-patro <?php echo $i;?>">
 					<a href="<?php echo esc_attr( get_sub_field('link_de_redirecionamento') ); ?>" target="_blank">
-						<?php echo wp_get_attachment_image( $patro, 'full' ); ?>
+						<?php echo wp_get_attachment_image( $patro, 'full', false, array('class' => 'img-responsive')); ?>
 					</a>
 				</div>
 				<?php endwhile; ?>
@@ -30,7 +30,6 @@ get_header();?>
 			<div class="box-pq">
 				<?php echo wp_kses_post( get_field('chamada_conversao') );?>
 				<a href="" title="" class="btn btn-red"><?php esc_html_e( 'Quero ser um apoiador!', 'ibrachina' ); ?> <i class="fa-brands fa-whatsapp"></i></a>
-			</div>
 			</div>
 		</div>
 	</div>

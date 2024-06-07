@@ -1,9 +1,9 @@
 {
-    "key": "group_665f3142f196f",
+    "key": "group_666352f40f0af",
     "title": "Porque",
     "fields": [
         {
-            "key": "field_665f326fb4bc0",
+            "key": "field_666352f410ee5",
             "label": "Atleta",
             "name": "atleta",
             "aria-label": "",
@@ -28,9 +28,9 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_666361bedb148",
+            "key": "field_666352f41495e",
             "label": "Motivos",
-            "name": "motivos_ibrachina",
+            "name": "motivos",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -50,7 +50,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_666361bedb149",
+                    "key": "field_666352f42376e",
                     "label": "Imagem de destaque",
                     "name": "imagem_de_destaque",
                     "aria-label": "",
@@ -73,10 +73,10 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium",
-                    "parent_repeater": "field_666361bedb148"
+                    "parent_repeater": "field_666352f41495e"
                 },
                 {
-                    "key": "field_666361bedb14a",
+                    "key": "field_666352f427178",
                     "label": "Título",
                     "name": "titulo",
                     "aria-label": "",
@@ -94,10 +94,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_666361bedb148"
+                    "parent_repeater": "field_666352f41495e"
                 },
                 {
-                    "key": "field_666361bedb14b",
+                    "key": "field_666352f42ac03",
                     "label": "Conteúdo",
                     "name": "conteudo",
                     "aria-label": "",
@@ -115,12 +115,12 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_666361bedb148"
+                    "parent_repeater": "field_666352f41495e"
                 }
             ]
         },
         {
-            "key": "field_66633b02fcebd",
+            "key": "field_666352f4183d4",
             "label": "Atletas por posição",
             "name": "atletas_por_posicao",
             "aria-label": "",
@@ -142,7 +142,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_66633b655515d",
+                    "key": "field_666352f43a564",
                     "label": "Posição",
                     "name": "posicao",
                     "aria-label": "",
@@ -160,10 +160,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_66633b02fcebd"
+                    "parent_repeater": "field_666352f4183d4"
                 },
                 {
-                    "key": "field_66633b18fcebe",
+                    "key": "field_666352f43dfb9",
                     "label": "Elenco",
                     "name": "elenco",
                     "aria-label": "",
@@ -185,7 +185,7 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
-                            "key": "field_66633b21fcebf",
+                            "key": "field_666352f445880",
                             "label": "Foto",
                             "name": "foto",
                             "aria-label": "",
@@ -208,10 +208,10 @@
                             "max_size": "",
                             "mime_types": "",
                             "preview_size": "medium",
-                            "parent_repeater": "field_66633b18fcebe"
+                            "parent_repeater": "field_666352f43dfb9"
                         },
                         {
-                            "key": "field_66633cec35dab",
+                            "key": "field_666352f4492f2",
                             "label": "Camisa",
                             "name": "camisa",
                             "aria-label": "",
@@ -231,10 +231,10 @@
                             "step": "",
                             "prepend": "",
                             "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
+                            "parent_repeater": "field_666352f43dfb9"
                         },
                         {
-                            "key": "field_66633cf735dac",
+                            "key": "field_666352f44cd5e",
                             "label": "Nome",
                             "name": "nome",
                             "aria-label": "",
@@ -252,10 +252,10 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
+                            "parent_repeater": "field_666352f43dfb9"
                         },
                         {
-                            "key": "field_66633cff35dad",
+                            "key": "field_666352f4507d4",
                             "label": "Ano de Nascimento",
                             "name": "ano_de_nascimento",
                             "aria-label": "",
@@ -275,15 +275,15 @@
                             "step": "",
                             "prepend": "",
                             "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
+                            "parent_repeater": "field_666352f43dfb9"
                         }
                     ],
-                    "parent_repeater": "field_66633b02fcebd"
+                    "parent_repeater": "field_666352f4183d4"
                 }
             ]
         },
         {
-            "key": "field_666350fee5e59",
+            "key": "field_666352f41be49",
             "label": "Chamada Conversão",
             "name": "chamada_conversao",
             "aria-label": "",
@@ -308,7 +308,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "69"
+                "value": "92"
             }
         ]
     ],
@@ -321,5 +321,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1717789208
+    "modified": 1717785554
 }
