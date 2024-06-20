@@ -5,50 +5,85 @@ get_header();?>
 <div class="atletas-ibra">
 	<div class="container">
 		<div class="row">
-			<h2><?php esc_html_e( 'Elenco', 'ibrachina' ); ?> Ibrachina</h2>
-			<div class="tabs">
-				<div class="tab-opt">
-					<ul>
-						<?php if( have_rows('atletas_por_posicao') ): ?>
-							<?php  $i = 1; while( have_rows('atletas_por_posicao') ): the_row(); ?>
-							    <li>
-								    <a href="#tab-<?php echo $i;?>"><?php echo esc_attr( get_sub_field('posicao') ); ?></a>
-							    </li>
-							<?php $i = $i + 1; endwhile; ?>
-						<?php endif; ?>
-					</ul>
+			<div class="convert">
+				<div class="container">
+					<div class="row">
+						<div class="box-pq">
+							<?php echo wp_kses_post( get_field('chamada_conversao') );?>
+							<a href="" title="" class="btn btn-red"><?php esc_html_e( 'Matricule-se!', 'ibrachina' ); ?> <i class="fa-brands fa-whatsapp"></i></a>
+						</div>
+					</div>
 				</div>
-				<div class="tabs-content">
-					<?php if( have_rows('atletas_por_posicao') ): ?>
-							<?php  $i = 1; while( have_rows('atletas_por_posicao') ): the_row(); ?>
-							    <div id="tab-<?php echo $i;?>">
-							    	<div class="flex-tabs">
+			</div>
+		</div>
+	</div>
+</div>
 
-							    		<?php if( have_rows('elenco') ): ?>
-							    			<?php while( have_rows('elenco') ): the_row();  $foto = get_sub_field('foto');?>
-							    			
-							    				<div class="jogador">
-							    					<?php echo wp_get_attachment_image( $foto, 'full', false, array('class' => 'img-responsive') ); ?>
-							    					<h3><?php echo esc_attr( get_sub_field('nome') ); ?></h3>
-							    					<h4><?php esc_html_e( 'Camisa', 'ibrachina' ); ?> - <?php echo esc_attr( get_sub_field('camisa') ); ?></h4>
-							    					<h5><?php echo esc_attr( get_sub_field('ano_de_nascimento') ); ?></h5>
-							    				</div>
-							    			
-							    			<?php endwhile; ?>
-							    		<?php endif; ?>
-							    	</div>
-							    </div>
-							<?php $i = $i + 1; endwhile; ?>
-					<?php endif; ?>					
-				</div>
+<div class="horarios-ibra">
+	<div class="container">
+		<div class="row">
+			<h2><?php esc_html_e( 'Nossos Horários', 'ibrachina' ); ?></h2>
+			<?php echo wp_kses_post( get_field('chamada_horarios')); ?>
 
-				<div class="convert">
-					<div class="container">
-						<div class="row">
-							<div class="box-pq">
-								<?php echo wp_kses_post( get_field('chamada_conversao') );?>
-								<a href="" title="" class="btn btn-red"><?php esc_html_e( 'Quero fazer parte!', 'ibrachina' ); ?> <i class="fa-brands fa-whatsapp"></i></a>
-							</div>
+			<?php if( have_rows('horarios') ): ?>
+				<table class="horarios">
+					<tr class="top-table">
+						<td><?php esc_html_e( 'Idade', 'ibrachina' ); ?></td>
+						<td><?php esc_html_e( 'Dia', 'ibrachina' ); ?></td>
+						<td><?php esc_html_e( 'Horário', 'ibrachina' ); ?></td>
+						<td><?php esc_html_e( 'Professor', 'ibrachina' ); ?></td>
+					</tr>
+					<?php while( have_rows('horarios') ): the_row();?>
+						<tr>
+							<td class="idade"><?php echo wp_kses_post( get_sub_field('idade') );?></td>
+							<td><?php echo wp_kses_post( get_sub_field('datas') );?></td>
+							<td><?php echo wp_kses_post( get_sub_field('horarios') );?></td>
+							<td><?php echo wp_kses_post( get_sub_field('instrutores') );?></td>
+						</tr>
+					<?php endwhile; ?>
+				</table>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>
+
+<div class="turmas-ibra">
+	<div class="container">
+		<div class="row">
+			<h2>Turmas Disponíveis</h2>
+
+			<?php if( have_rows('turmas_disponiveis') ): ?>
+				<table class="horarios">
+					<tr class="top-table">
+						<td><?php esc_html_e( 'Idade', 'ibrachina' ); ?></td>
+						<td><?php esc_html_e( 'Dia', 'ibrachina' ); ?></td>
+						<td><?php esc_html_e( 'Horário', 'ibrachina' ); ?></td>
+						<td><?php esc_html_e( 'Professor', 'ibrachina' ); ?></td>
+					</tr>
+					<?php while( have_rows('turmas_disponiveis') ): the_row(); 
+						?>
+						<tr>
+							<td class="idade"><?php echo wp_kses_post( get_sub_field('idade') );?></td>
+							<td><?php echo wp_kses_post( get_sub_field('datas') );?></td>
+							<td><?php echo wp_kses_post( get_sub_field('horarios') );?></td>
+							<td><?php echo wp_kses_post( get_sub_field('instrutores') );?></td>
+						</tr>
+					<?php endwhile; ?>
+				</table>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>
+
+<div class="atletas-ibra convert-secundario">
+	<div class="container">
+		<div class="row">
+			<div class="convert">
+				<div class="container">
+					<div class="row">
+						<div class="box-pq">
+							<?php echo wp_kses_post( get_field('chamada_conversao') );?>
+							<a href="" title="" class="btn btn-red"><?php esc_html_e( 'Matricule-se!', 'ibrachina' ); ?> <i class="fa-brands fa-whatsapp"></i></a>
 						</div>
 					</div>
 				</div>

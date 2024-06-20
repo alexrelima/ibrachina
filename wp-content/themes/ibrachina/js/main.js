@@ -84,6 +84,26 @@ $(function() {
 		}
 	});
 
+	$('.owl-camp').owlCarousel({
+		loop:false,
+		margin:30,
+		nav:false,
+		dots: true,
+		autoplay: true,
+		items:1,
+		responsive:{
+			0:{
+				items:2,
+			},
+			600:{
+				items:2,
+			},
+			1000:{
+				items:4
+			},
+		}
+	});
+
 
 
 	
@@ -127,6 +147,16 @@ $(function() {
 		var img = $(".sobre img");
 		$(".sobre").css({height:img.height()});
 	}
+
+
+	Fancybox.bind('[data-fancybox]', {
+        //
+      }); 
+
+	document.getElementById("triggger").addEventListener("click", () => {
+        Fancybox.show([{ src: "#dialog-content-1", type: "inline" }]);
+      });  
+	
 });
 
 $(window).resize(function(){

@@ -120,9 +120,49 @@
             ]
         },
         {
-            "key": "field_66633b02fcebd",
-            "label": "Atletas por posição",
-            "name": "atletas_por_posicao",
+            "key": "field_666350fee5e59",
+            "label": "Chamada Conversão",
+            "name": "chamada_conversao",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6671af1890805",
+            "label": "Chamada Horários",
+            "name": "chamada_horarios",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6671a8c8035d2",
+            "label": "Horários",
+            "name": "horarios",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -142,9 +182,9 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_66633b655515d",
-                    "label": "Posição",
-                    "name": "posicao",
+                    "key": "field_6671a8cf035d3",
+                    "label": "Idade",
+                    "name": "idade",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -160,14 +200,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_66633b02fcebd"
+                    "parent_repeater": "field_6671a8c8035d2"
                 },
                 {
-                    "key": "field_66633b18fcebe",
-                    "label": "Elenco",
-                    "name": "elenco",
+                    "key": "field_6671a8dc035d4",
+                    "label": "Datas",
+                    "name": "datas",
                     "aria-label": "",
-                    "type": "repeater",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -176,118 +216,63 @@
                         "class": "",
                         "id": ""
                     },
-                    "layout": "table",
-                    "pagination": 0,
-                    "min": 0,
-                    "max": 0,
-                    "collapsed": "",
-                    "button_label": "Adicionar linha",
-                    "rows_per_page": 20,
-                    "sub_fields": [
-                        {
-                            "key": "field_66633b21fcebf",
-                            "label": "Foto",
-                            "name": "foto",
-                            "aria-label": "",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "id",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "preview_size": "medium",
-                            "parent_repeater": "field_66633b18fcebe"
-                        },
-                        {
-                            "key": "field_66633cec35dab",
-                            "label": "Camisa",
-                            "name": "camisa",
-                            "aria-label": "",
-                            "type": "number",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "min": "",
-                            "max": "",
-                            "placeholder": "",
-                            "step": "",
-                            "prepend": "",
-                            "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
-                        },
-                        {
-                            "key": "field_66633cf735dac",
-                            "label": "Nome",
-                            "name": "nome",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
-                        },
-                        {
-                            "key": "field_66633cff35dad",
-                            "label": "Ano de Nascimento",
-                            "name": "ano_de_nascimento",
-                            "aria-label": "",
-                            "type": "number",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "min": "",
-                            "max": "",
-                            "placeholder": "",
-                            "step": "",
-                            "prepend": "",
-                            "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
-                        }
-                    ],
-                    "parent_repeater": "field_66633b02fcebd"
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6671a8c8035d2"
+                },
+                {
+                    "key": "field_6671a8ec035d5",
+                    "label": "Horários",
+                    "name": "horarios",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6671a8c8035d2"
+                },
+                {
+                    "key": "field_6671a8fb035d6",
+                    "label": "Instrutores",
+                    "name": "instrutores",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6671a8c8035d2"
                 }
             ]
         },
         {
-            "key": "field_666350fee5e59",
-            "label": "Chamada Conversão",
-            "name": "chamada_conversao",
+            "key": "field_6671b0f78b986",
+            "label": "Turmas disponíveis",
+            "name": "turmas_disponiveis",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -296,11 +281,99 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Adicionar linha",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6671b0f78b987",
+                    "label": "Idade",
+                    "name": "idade",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6671b0f78b986"
+                },
+                {
+                    "key": "field_6671b0f78b988",
+                    "label": "Datas",
+                    "name": "datas",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6671b0f78b986"
+                },
+                {
+                    "key": "field_6671b0f78b989",
+                    "label": "Horários",
+                    "name": "horarios",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6671b0f78b986"
+                },
+                {
+                    "key": "field_6671b0f78b98a",
+                    "label": "Instrutores",
+                    "name": "instrutores",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6671b0f78b986"
+                }
+            ]
         }
     ],
     "location": [
@@ -321,5 +394,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1717789208
+    "modified": 1718727867
 }
