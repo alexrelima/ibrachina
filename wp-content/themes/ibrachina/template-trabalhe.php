@@ -8,6 +8,12 @@ get_header();?>
 			<div class="contato-head">
 				<?php the_content();?>
 			</div>
+
+			<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="content-trabalhe">
+					<?php the_field('chamada_trabalhe_conosco'); ?>
+				</div>
+			</div>
 			<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6">
 				<form id="form-contact" method="POST" enctype="multipart/form-data" action="<?php bloginfo('template_directory');?>/php/sendcontact.php">
 					<input type="text" name="name" placeholder="<?php esc_html_e( 'Nome', 'ibrachina' ); ?>" required class="dados">
@@ -15,10 +21,10 @@ get_header();?>
 					<input type="text" name="cell-phone" placeholder="<?php esc_html_e( 'Celular', 'ibrachina' ); ?>" class="form-cell fullphone dados">
 					<textarea name="mensagem" id="" placeholder="<?php esc_html_e( 'Digite sua mensagem', 'ibrachina' ); ?>"></textarea>
 					<div class="box-envio">
-						<label for="file">Envie seu currículo</label>
+						<label for="file"><?php esc_html_e( 'Envie seu currículo', 'ibrachina' ); ?></label>
 						<input type="file" name="file">
 					</div>
-					<input type="submit" name="send" value="<?php esc_html_e( 'Enviar contato', 'ibrachina' ); ?>"  class="btn btn-red">
+					<input type="submit" name="send" value="<?php esc_html_e( 'Enviar currículo', 'ibrachina' ); ?>"  class="btn btn-red">
 				</form>
 			</div>
 			<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6 comp">

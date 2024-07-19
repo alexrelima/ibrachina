@@ -9382,9 +9382,39 @@ hr {
 
 
 #menu-principal-en { display: inline-block; padding: 0px; margin: 0px; list-style: none; } 
+#menu-principal-en .sub-menu{/* display: none; */}
 #menu-principal-en li {padding: 10px 0px;display: inline-block;} 
-#menu-principal-en li a { color: #fff; text-transform: uppercase; font-size: 17px; margin: 0px 0px 0px 50px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; }
-#menu-principal-en li:first-child a { margin: 0px; }
+#menu-principal-en li a {color: #fff;text-transform: uppercase;font-size: 16px;margin: 0px 30px 0px 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;padding: 0px 0px 22px 0px;}
+#menu-principal-en li:first-child a {margin: 0px 30px 0px 0px;}
+
+
+#menu-principal { display: inline-block; padding: 0px; margin: 0px; list-style: none; } 
+#menu-principal .sub-menu{/* display: none; */}
+#menu-principal li {padding: 10px 0px;display: inline-block;} 
+#menu-principal li a {color: #fff;text-transform: uppercase;font-size: 16px;margin: 0px 30px 0px 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;padding: 0px 0px 22px 0px;}
+#menu-principal li:first-child a {margin: 0px 30px 0px 0px;}
+#menu-principal-en ul { display: none; position: absolute; top: 90px; z-index: 10; } 
+#menu-principal-en ul li { float: none; height: 43px; text-align: center; padding: 0px 10px; width: 100%; float: left; margin: 0px; display: table-footer-group; } 
+#menu-principal-en ul li:last-child:hover { background: transparent; } 
+#menu-principal-en ul li a { padding: 0px; line-height: 45px; height: 43px; color: #464646; border-bottom: 1px solid #ccc; font-size: 14px; } 
+#menu-principal-en li:hover > ul {background: #e0e1e3;width: 195px;padding: 0px;margin: 0px;display: list-item;list-style: none;} 
+#menu-principal-en li:hover > ul li a { width: 100%; float: left; color: #494949; text-align: left; font-weight: 500; } 
+#menu-principal-en ul li ul { left: 150px; top: 0; } 
+#menu-principal-en ul li:last-child { border-radius: 0px; border: none; margin: 0px; height: 43px; background: transparent; width: 100%; float: left; padding: 0px 10px; } 
+#menu-principal-en ul li:last-child a:hover { border-radius: 0px; }
+#menu-principal-en ul li:last-child a { border: none; line-height: 50px; } 
+#menu-principal-en ul li a:hover { background: transparent; color: #b41510; } 
+#menu-principal-en .menu-item-has-children.hover { background: #b41510; }
+#menu-principal-en ul li a:hover { background: transparent; color: #b41510; } 
+#menu-principal-en ul li:last-child a { border: none; line-height: 45px; font-weight: normal; } 
+#menu-principal-en #menu-item-117:hover > ul { width: 150px; } 
+#menu-principal-en .menu-item-has-children a:after { content: "\f078"; font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: bold; text-decoration: inherit; font-size: 13px; color: #fff; margin: 0px 0px 0px 5px; } 
+#menu-principal-en .menu-item-has-children ul a:after { display: none; } 
+#menu-principal-en .sub-menu:before {content: "\f0d8";font-family: "Font Awesome 5 Free";font-style: normal;font-weight: bold;text-decoration: inherit;font-size: 33px;color: #e0e1e3;margin: 0px 10px 0px 5px;position: absolute;top: -25px;left: 0px;} 
+#menu-principal-en li:last-child a { margin: 0px;}
+#menu-principal-en li a:hover { text-decoration: none; } 
+#menu-principal-en #menu-item-256:hover > ul { width: 195px; margin: 0px 0px 0px -120px; } 
+#menu-principal-en #menu-item-256 .sub-menu:before { left: auto; right: 0; }
 
 
 header {background: #000;float: left;width: 100%;position: relative;}
@@ -9527,7 +9557,9 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 .instalacoes-title { color: #262f3e; text-transform: uppercase; font-weight: 600; font-size: 38px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; margin: 80px 0px 30px; }
 .owl-instalacoes.owl-carousel { display: block; }
 .owl-carousel.owl-instalacoes .owl-item img { border: 1px solid #ccc; border-radius: 5px; }
-
+.arena-text h3 { color: #262f3e; text-transform: uppercase; font-weight: 600; font-size: 38px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; margin: 80px 0px 30px; } 
+.arena-text p { color: #262f3e; font-family: "Open Sans", sans-serif; } 
+.arena-text p a { color: #bf0411; font-weight: bold; }
 
 /* Escola de Futebol */
 .atletas-ibra { float: left; width: 100%; padding: 80px 0px; } 
@@ -9550,7 +9582,7 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 
 .convert {padding: 80px 0px 0px;}
 .page-template-template-escola .convert {padding: 0px;}
-.page-template-template-escola .convert .box-pq {background-color: #f1f1f1;display: block;padding: 72.5px 40px 130px;margin-bottom: 0px;clear: both;} 
+.page-template-template-escola .convert .box-pq {background-color: #f1f1f1;display: block;padding: 72.5px 40px 130px;margin-bottom: 0px;clear: both;margin-top: 80px;} 
 .page-template-template-escola .convert .box-pq h3 {color: #262f3e;text-transform: uppercase;font-weight: 600;font-size: 48px;margin: 0px;font-family: "Oswald", sans-serif;font-optical-sizing: auto;width: 70%;line-height: 1.3;} 
 .page-template-template-escola .convert .box-pq p {color: #262f3e;max-width: 45%;font-family: "Open Sans", sans-serif;font-optical-sizing: auto;font-size: 20px;}
 .page-template-template-escola .convert .box-pq h4 { display: contents; font-size: 20px; } 
@@ -9564,7 +9596,9 @@ footer ul li:hover, footer ul li a:hover { opacity: 0.8; color: #fff; }
 .turmas-ibra h2 { text-transform: uppercase; font-size: 120px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; margin: 80px 0px 30px 0px; line-height: 1; color: rgb(38 47 62 / 15%); }
 .horarios-ibra table.horarios .top-table td { background: #282828; color: #fff; font-weight: bold; }
 .turmas-ibra table.horarios .top-table td { background: #282828; color: #fff; font-weight: bold; }
-table.horarios { width: 100%; } 
+table.horarios {
+    width: 100%;
+} 
 table.horarios td { border: 1px solid #ccc; padding: 10px; } 
 table.horarios tr:nth-child(odd) td{ background: #d8d8d8; } 
 table.horarios tr:nth-child(even) td{ background: #f1f1f1; } 
@@ -9574,18 +9608,20 @@ table.horarios tr:nth-child(even) td{ background: #f1f1f1; }
 /* Trabalhe Conosco */
 .box-envio { padding: 10px 15px; margin: 0px 0px 15px; background: #ebebeb; border-radius: 5px; } 
 .box-envio label { font-weight: bold; width: 100%; float: left; margin: 0px 0px 5px 0px; }
-.contato-page.trabalhe-page h2 { font-size: 110px; margin: 0px 0px 70px 0px; } 
+.contato-page.trabalhe-page h2 {font-size: 110px;margin: 0px 0px 30px 0px;} 
 .contato-page.trabalhe-page .contato-head { top: 80px; }
+.content-trabalhe { color: #262f3e; font-family: "Open Sans", sans-serif; margin: 0px 0px 40px 0px; }
 
 /* Proximos Jogos */
 .proximos-jogos { float: left; width: 100%; padding: 80px 0px 0px; position: relative; }
 .proximos-jogos .contato-head p { margin: 60px 0px 0px; }
 .proximos-jogos h2 { text-transform: uppercase; font-size: 120px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; margin: 0px 0px 60px 0px; line-height: 1; color: rgb(38 47 62 / 15%); } 
-.dados {width: 55%;float: left;padding: 20px 0px 0px;} 
+.dados {width: 55%;float: left;padding: 0px 0px 0px;} 
 .jogo { width: 100%; float: left; background: #f1f1f1; margin: 0px 0px 10px 0px; padding: 15px 50px; } 
 .jogo:nth-child(odd) {background: #d8d8d8;}
 .partidas-futuras {margin: 0px 0px 50px;padding: 0px;list-style: none;float: left;} 
-.dados h3 { font-size: 22px; display: contents; text-transform: uppercase; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; } 
+.dados h3 {font-size: 22px;/* display: contents; */text-transform: uppercase;font-family: "Oswald", sans-serif;font-optical-sizing: auto;font-weight: 600;font-style: normal;margin: 0px 0px 5px 0px;clear: both;display: block;} 
+.assistir-btn { display: block; background: #000; text-align: center; max-width: fit-content; padding: 8px 40px; line-height: 1; font-size: 16px; }
 .data { width: 20%; float: left; background: #fff; text-align: center; border-top: 3px solid #bf0411; margin: 0px 25px 0px 0px; } 
 .local { background: #fff; float: left; width: 20%; text-align: center; border-top: 3px solid #5394b8; padding: 10px 0px; } 
 .data h4 { margin: 0px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; font-size: 22px; padding: 18px 0px; text-transform: uppercase; } 
@@ -9593,7 +9629,7 @@ table.horarios tr:nth-child(even) td{ background: #f1f1f1; }
 .local h4 { margin: 0px; font-size: 16px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 800; font-style: normal; text-transform: uppercase; font-size: 16px; } 
 .local h5 { margin: 0px; font-size: 16px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal; font-size: 16px; }
 .page-template-template-jogos .resultado { margin: 0px 0px 60px 0px; }
-
+.proximos-jogos img { margin: 0px 0px 40px 0px; }
  
 /* Diretores */
 .diretores {float: left;width: 100%;padding: 80px 0px 0px;position: relative;} 
@@ -9617,13 +9653,14 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
 .fancybox__content h5 { font-size: 18px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; color: #262f3e; margin: 15px 0px 20px; } 
 .fancybox__content ul { margin: 0px; }
 .page-template-template-peneiras .proximos-jogos h4 { color: #262f3e; text-transform: uppercase; font-weight: 600; font-size: 23px; margin: 0px 0px 10px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; width: 70%; line-height: 1.3; }
-
+.content-peneiras { margin: 0px 0px 50px 0px; color: #262f3e; font-family: "Open Sans", sans-serif; }
+.content-peneiras h3 { color: #262f3e; font-weight: 600; font-size: 23px; margin: 0px 0px 10px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; width: 70%; line-height: 1.3; } 
 
 /* Na midia */
 .na-midia {float: left;width: 100%;padding: 80px 0px 40px;position: relative;} 
 .na-midia h2 { text-transform: uppercase; font-size: 120px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; font-weight: 600; font-style: normal; margin: 0px 0px 60px 0px; line-height: 1; color: rgb(38 47 62 / 15%); } 
 .na-midia .contato-head p { margin: 55px 0px 0px; }
-.item-midia img { border-radius: 10px 10px 0px 0px; } 
+.item-midia img {border-radius: 10px 10px 0px 0px;height: 200px;object-fit: cover;object-position: top;width: 100%;} 
 .box-midia {background: #dfe0e2;border-radius: 0px 0px 10px 10px;padding: 20px 15px;margin: 0px 0px 40px 0px;} 
 .box-midia h3, .box-midia h3 a { margin: 0px; text-align: center; color: #262f3e; font-size: 18px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; } 
 .box-midia a { color: #b01d23; text-align: center; width: 100%; display: block; margin: 15px 0px 0px 0px; font-weight: bold; text-transform: uppercase; font-size: 14px; font-family: "Oswald", sans-serif; font-optical-sizing: auto; } 
@@ -9645,7 +9682,7 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .wpml-ls-legacy-list-horizontal { padding-right: 0; } 
     .sobre .sobre-img { left: -210px; } 
     .sobre span { margin: 100px 0px 0px 40px; } 
-    .sobre p {margin-left: 65px;} 
+    .sobre p {margin-left: 65px;max-width: 80%;} 
     .sobre .btn { margin: 40px 0px 0px 40px; } 
     .porque { padding: 26px 15px; } 
     .porque h2 { font-size: 180px; } 
@@ -9655,9 +9692,29 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .patrocinadores h2 { font-size: 150px; }
     .insta {padding: 0px 15px;} 
     footer .container { padding: 0px 30px; }
+    footer {background-size: cover;}
 
     /* Escola de futebol */
     .atletas-ibra { padding: 80px 20px; }
+
+    /* Diretoria */
+    .diretores h2 {padding: 0px 15px;font-size: 120px;} 
+    .page-template-template-diretoria .contato-head p { padding: 0px 15px; width: 80%; }
+
+    /* Agenda */
+    .proximos-jogos .contato-head p { padding: 0px 15px; } 
+    .proximos-jogos h2 { padding: 0px 15px; }
+    .jogo { padding: 15px; }
+
+    
+    /* Escola de futebol */
+    .atletas-ibra { padding: 80px 15px; }
+    .turmas-ibra { padding: 15px; margin: 0px 0px 50px 0px; }
+    .horarios-ibra { padding: 15px; }
+
+    /*Midia*/
+    .na-midia h2 { padding: 0px 15px; } 
+    .na-midia .contato-head p { padding: 0px 15px; }
 
     /* instalacoes */
     .contato-page h2 { font-size: 150px; } .contato-page { padding: 80px 15px; } 
@@ -9677,24 +9734,47 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .banner-content {top: 150px;padding: 0px 15px;} 
     .sobre .sobre-img {left: -180px;} 
     .sobre span { margin: 50px 0px 0px 70px; } 
-    .sobre p { margin-left: 95px; } 
-    .sobre .btn { margin: 40px 0px 0px 70px; } 
+    .sobre p {margin-left: 95px;font-size: 15px;max-width: 75%;} 
+    .sobre .btn {margin: 10px 0px 0px 70px;} 
     .porque h2 { font-size: 150px; } 
     .box-itens img { margin: 0px 20px 15px 0px; } 
     .box-pq { background-size: 55% 100%; }    
     .box-itens .col { padding: 0px; position: relative; z-index: 10; } 
     .item-patro { padding: 60px 0px; } 
-    .box-pq .atleta { right: -30px; width: 44%; bottom: -68px; }
+    .box-pq .atleta {right: -30px;width: 44%;bottom: -106px;object-fit: contain;}
     .patrocinadores h2 { font-size: 130px; } 
     .item-patro img { margin: 0 auto; }
+    #menu-principal li a { margin: 0px 15px 0px 0px; font-size: 14px; } 
+    #menu-principal li:first-child a { margin: 0px 15px 0px 0px; } 
+    #menu-principal-en li a { margin: 0px 15px 0px 0px; font-size: 14px; } 
+    #menu-principal-en li:first-child a { margin: 0px 15px 0px 0px; } 
+  
+    footer { background-size: cover; }
+
+    /* Diretoria */
+    .diretores h2 {padding: 0px 15px;font-size: 120px;} 
+    .page-template-template-diretoria .contato-head p { padding: 0px 15px; width: 80%; }
+
+    /* Agenda */
+    .proximos-jogos .contato-head p { padding: 0px 15px; } 
+    .proximos-jogos h2 { padding: 0px 15px; }
+    .jogo { padding: 15px; }
 
     /* Escola de futebol */
     .atletas-ibra { padding: 80px 15px; }
+    .turmas-ibra { padding: 15px; margin: 0px 0px 50px 0px; }
+    .horarios-ibra { padding: 15px; }
+
+    /*Midia*/
+    .na-midia h2 { padding: 0px 15px; } 
+    .na-midia .contato-head p { padding: 0px 15px; }
 
     /* instalacoes */
     .contato-page h2 { font-size: 120px; margin: 0px 0px 100px 0px; } 
     .contato-page { padding: 80px 15px; } 
     .contato-head {top: 90px;margin-left: 0px;width: 95%;}
+
+
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -9737,9 +9817,9 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .idiomas { padding: 0px 15px 0px 0px; }
 
     .sobre .sobre-img {left: -110px;}
-    .sobre span { margin: 50px 0px 0px; } 
-    .sobre p { max-width: 100%; text-shadow: 2px 2px 2px rgba(0,0,0,0.6); } 
-    .sobre .btn { margin: 20px 0px 40px; } .porque { padding: 26px 15px; } 
+    .sobre span {margin: 50px 0px 0px;display: none;} 
+    .sobre p {max-width: 100%;text-shadow: 2px 2px 2px rgba(0,0,0,0.6);font-size: 15px;} 
+    .sobre .btn {margin: 0px 0px 40px;} .porque { padding: 26px 15px; } 
     .porque h2 { font-size: 120px; text-align: left; margin: 0px 0px 130px; } 
     .pq-head { top: 95px; } 
     .box-pq { background: linear-gradient(180deg, rgba(7, 154, 165, 1) 0%, rgba(255, 142, 21, 1) 60%, rgba(228, 94, 69, 1) 100%); width: 100%; } 
@@ -9764,12 +9844,45 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .cbf h2 { font-size: 50px; position: absolute; } 
     .cbf-head { position: relative; top: 20px; }
 
+    /* Diretoria */
+    .diretores { padding: 30px 15px; } 
+    .diretores h2 {font-size: 90px;text-align: left;margin: 0px 0px 30px;} 
+    .diretores .contato-head p { margin: 30px 0px 0px 0px; font-size: 25px; }
+
+    /* agenda */
+    .proximos-jogos { padding: 30px 15px; } 
+    .proximos-jogos h2 {font-size: 90px;} 
+    .proximos-jogos .contato-head p {margin: 20px 0px 0px;font-size: 35px;} 
+    .dados { width: 100%; margin: 0px 0px 10px 0px; } 
+    .jogo { padding: 15px; } 
+    .data { width: 45%; } .local { width: 45%; }
+    .assistir-btn { width: 100%; text-align: center; font-size: 14px; padding: 13px 20px; }
+    .dados h3 { font-size: 20px; } 
+    .placares.owl-carousel.owl-theme.owl-loaded { padding: 0px 15px; }
+
     /* Escola de futebol */
     .atletas-ibra h2 { font-size: 90px; } 
+    .us-version .atletas-ibra h2 {font-size: 70px;}
     .atletas-ibra { padding: 50px 15px; } 
     .page-template-template-escola .convert .box-pq h3 {color: #fff;width: 100%;,max-block-size: ;} 
     .page-template-template-escola .convert .box-pq p { color: #fff; max-width: 70%; } 
-    .page-template-template-escola .convert .box-pq { padding: 42.5px 40px 100px; }
+    .page-template-template-escola .convert .box-pq {padding: 42.5px 40px 100px;margin: 30px 0px;}
+    .turmas-ibra { padding: 30px 15px; } 
+    .turmas-ibra h2 { font-size: 70px; } 
+    .horarios-ibra { padding: 30px 15px; } 
+    .horarios-ibra h2 { font-size: 70px; margin: 0px 0px 80px 0px; } 
+    .horarios-ibra p { font-size: 30px; } 
+    .atletas-ibra.convert-secundario { padding: 0px 15px 40px; }
+    .page-template-template-escola .convert .box-pq h4 strong { color: #f1f1f1; font-size: 25px; } 
+    .page-template-template-escola .convert .box-pq h4 { font-size: 15px; color: #d9d9d9; }
+
+      /* Midia */
+    .na-midia { padding: 30px 0px 40px; } 
+    .na-midia h2 { font-size: 85px; text-align: left; margin: 0px 0px 80px; padding: 0px 15px; } 
+    .na-midia .contato-head p {padding: 0px 15px;margin: 45px 0px 0px;}
+    .na-midia .contato-head p { font-size: 35px; margin: 25px 0px 0px; width: 100%; }
+
+
 
     /* Patrocinadores */
     .page-template-template-patrocinadores .convert { padding: 0px 15px; } 
@@ -9781,6 +9894,19 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .contato-page { padding: 80px 15px; }
     .contato-page h2 {font-size: 95px;margin: 0px 0px 100px 0px;} 
     .contato-head {top: 65px;margin: 0px;width: 90%;}
+
+    /* Trabalhe */
+    .page-template-template-trabalhe .contato-page.trabalhe-page h2 { font-size: 80px; margin: 0px 0px 50px 0px; } 
+    .page-template-template-trabalhe .contato-head p { margin: 50px 0px 0px; } 
+    .page-template-template-trabalhe input[type="file"] { font-size: 15px; }
+
+    /* Peneiras */
+    .page-template-template-peneiras .proximos-jogos h2 { padding: 0px 15px; } 
+    .page-template-template-peneiras .proximos-jogos .contato-head p {padding: 0px 15px;margin: 30px 0px 0px;} 
+    .page-template-template-peneiras .proximos-jogos { padding: 40px 0px; }
+    .table-resp { overflow-x: auto; margin: 0px 0px 40px 0px; } 
+    .page-template-template-peneiras .proximos-jogos h4 { margin: 0px 0px 10px; } 
+
     
 }
 
@@ -9875,7 +10001,21 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     footer a { font-size: 15px; } 
     footer ul li a { font-size: 17px; }
 
+    /* Diretores */
+    .diretores { padding: 30px 15px; } 
+    .diretores h2 { font-size: 55px; text-align: left; margin: 0px 0px 30px; }
 
+    /* agenda */
+    .proximos-jogos { padding: 30px 15px; } 
+    .proximos-jogos h2 { font-size: 55px; } 
+    .proximos-jogos .contato-head p { margin: 20px 0px 0px; } 
+    .dados { width: 100%; margin: 0px 0px 10px 0px; } 
+    .jogo { padding: 15px; } 
+    .data { width: 45%; } .local { width: 45%; }
+    .assistir-btn { width: 100%; text-align: center; font-size: 14px; padding: 13px 20px; }
+    .dados h3 { font-size: 20px; } 
+    .placares.owl-carousel.owl-theme.owl-loaded { padding: 0px 15px; }
+    
     /* Escola de Futebol */
     .tabs .tab-opt ul { padding-left: 0; } 
     .tabs .tab-opt ul li a { display: block; width: 100%; }
@@ -9887,7 +10027,7 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .cbf-head {position: relative;top: 25px;} 
     .cbf img { margin: 0 auto; float: none; display: block; margin-top: 30px; }
 
-
+    
 
     /* Escola de Futebol */
     .tabs .tab-opt ul { padding-left: 0; } 
@@ -9897,11 +10037,26 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .tabs .tab-opt ul li.active { padding: 5px; margin: 0px 8px 8px 0px; } 
     .tabs .tab-opt ul li { padding: 5px; margin: 0px 8px 8px 0px; } 
     .page-template-template-escola .convert .box-pq h3 { font-size: 24px; width: 100%; color: #fff; } 
-    .page-template-template-escola .convert .box-pq { padding: 32.5px 20px 90px; } 
+    .page-template-template-escola .convert .box-pq {padding: 32.5px 20px 90px;margin-top: 0;} 
     .page-template-template-escola .convert .box-pq p { max-width: 100%; font-size: 18px; color: #fff; } 
     .page-template-template-escola .btn.btn-red { width: 100%; } .convert { padding: 50px 0px 30px; }
     .page-template-template-escola .convert { margin: 50px 0px 20px 0px; padding: 0px; }
 
+    .turmas-ibra { padding: 30px 15px; }
+    .turmas-ibra h2 { font-size: 55px; text-align: left; margin: 0px 0px 30px; } 
+    .horarios-ibra { padding: 30px 15px; } 
+    .horarios-ibra h2 {font-size: 55px;text-align: left;margin: 0px 0px 40px;} 
+    .horarios-ibra p {font-size: 18px;margin: -55px 0px 0px 0px;} 
+    .atletas-ibra.convert-secundario { padding: 0px 15px 40px; } 
+    .page-template-template-escola .convert .box-pq h4 strong { color: #f1f1f1; font-size: 25px; } 
+    .page-template-template-escola .convert .box-pq h4 { font-size: 15px; color: #d9d9d9; }
+
+    /* Midia */
+    .na-midia { padding: 30px 0px 40px; } 
+    .na-midia h2 { font-size: 85px; text-align: left; margin: 0px 0px 80px; padding: 0px 15px; } 
+    .na-midia .contato-head p {padding: 0px 15px;margin: 45px 0px 0px;}
+    
+    
     /* Instalacoes */
     .contato-page h2 {font-size: 45px;text-align: left;margin: 0px 0px 80px;}
     .contato-page { padding: 30px 15px; }
@@ -9909,7 +10064,7 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .contato-head {margin: 0px;top: 65px;width: calc(100% - 15px);}
     .comp { border-left: 0px; margin: 30px 0px 0px 0px; } 
     .instalacoes-title { font-size: 25px; margin: 50px 0px 15px; }
-    .page-template-template-instalacoes .contato-head p {margin: -10px 0px 0px;} 
+    .page-template-template-instalacoes .contato-head p {margin: 15px 0px 0px;} 
     .page-template-template-instalacoes .contato-page .col {padding: 0px;}
 
 
@@ -9923,9 +10078,23 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
 
     /* Contato */
     .page-template-template-contato .contato-page h2 {font-size: 90px;text-align: left;margin: 0px 0px 50px;} 
-    .page-template-template-contato .contato-head p { font-size: 20px; margin: 0px; width: 60%; }
+    .page-template-template-contato .contato-head p {font-size: 20px;margin: 50px 0px 0px 0px;width: 60%;}
     .page-template-template-contato .contato-page .col { padding: 0px; }
-    .contato-head { top: 95px; }
+    .contato-head {top: 45px;}
+
+    /* Trabalhe */
+    .page-template-template-trabalhe .contato-page.trabalhe-page .contato-head {top: 30px;}
+    .page-template-template-trabalhe .contato-page.trabalhe-page h2 { font-size: 55px; } 
+    .page-template-template-trabalhe.us-version .contato-page.trabalhe-page .contato-head { top: 30px; }
+    .page-template-template-trabalhe .contato-page.trabalhe-page .contato-head p { margin: 40px 0px 0px; } 
+
+    /* Peneiras */
+    .page-template-template-peneiras .proximos-jogos h2 { padding: 0px 15px; } 
+    .page-template-template-peneiras .proximos-jogos .contato-head p {padding: 0px 15px;margin: 30px 0px 0px;} 
+    .page-template-template-peneiras .proximos-jogos { padding: 40px 0px; }
+    .table-resp { overflow-x: auto; margin: 0px 0px 40px 0px; } 
+    .page-template-template-peneiras .proximos-jogos h4 { margin: 0px 0px 10px; } 
+    button.btn.btn-red.btn-peneira { width: 100%; }
 
 }
 
@@ -9949,7 +10118,7 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .side-menu-wrapper_header ul li a {font-size: 17px;color: #262f3e;width: 100%;float: left;padding: 0px 0px 5px 0px;margin: 0px;font-weight: 800;text-transform: initial;font-family: "Oswald", sans-serif;font-optical-sizing: auto;} 
     .side-menu-wrapper_header ul li ul a { font-weight: 400; }
     .side-menu-wrapper_header ul li {width: 100%;float: left;border-bottom: 1px dashed #ccc;padding: 10px 0px;margin: 0px 0px 10px 0px;} 
-    .side-menu-wrapper_header ul li ul {margin: 15px 0px 0px 0px;padding: 0px 15px;float: left;/* display: none; */} 
+    .side-menu-wrapper_header ul li ul {margin: 15px 0px 0px 0px;padding: 0px 15px;float: left;/* display: none; */width: 100%;} 
     .side-menu-wrapper_header ul li ul li:last-child {border: none;margin: 0px;padding: 10px 0px 0px;}
     .side-menu-wrapper_header ul li a:hover, .side-menu-wrapper_header ul li a:focus {color: #ce171e;text-decoration: none;outline: none;font-size: 17px;width: 100%;float: left;padding: 0px 0px 5px 0px;margin: 0px;font-weight: 800;text-transform: initial;}
     .side-menu-wrapper_header .p-whats {display: block;margin: 20px 0px 0px 0px;padding: 0px 0px 0px 0px;float: left;width: 100%;} 
@@ -10024,7 +10193,22 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .cbf-head { position: relative; top: 10px; } 
     .cbf img { margin: 0 auto; float: none; display: block; margin-top: 30px; }
 
+    /* Diretores */
+    .diretores h2 {font-size: 55px;text-align: left;margin: 0px 0px 30px;} 
+    .diretores {padding: 30px 15px 70px;} 
+    .diretores .contato-head p { margin: 30px 0px 0px 0px; } 
+    .page-template-template-diretoria.us-version .diretores .contato-head p { margin: 60px 0px 0px 0px; }
+    .contato-head { width: calc(100% - 30px); }
 
+    /* agenda */
+    .proximos-jogos h2 { font-size: 55px; text-align: left; margin: 0px 0px 30px; } 
+    .proximos-jogos { padding: 30px 15px; } 
+    .dados { width: 100%; margin: 0px 0px 10px 0px; } 
+    .jogo { padding: 15px; } 
+    .data { width: 45%; } 
+    .local { width: 45%; }
+    .assistir-btn { width: 100%; text-align: center; font-size: 14px; padding: 13px 20px; } 
+    .dados h3 { font-size: 20px; }
 
     /* Escola de Futebol */
     .tabs .tab-opt ul { padding-left: 0; } 
@@ -10034,11 +10218,24 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .tabs .tab-opt ul li.active { padding: 5px; margin: 0px 8px 8px 0px; } 
     .tabs .tab-opt ul li { padding: 5px; margin: 0px 8px 8px 0px; } 
     .page-template-template-escola .convert .box-pq h3 { font-size: 24px; width: 100%; color: #fff; } 
-    .page-template-template-escola .convert .box-pq { padding: 32.5px 20px 90px; } 
+    .page-template-template-escola .convert .box-pq {padding: 32.5px 20px 90px;margin-top: 0;} 
     .page-template-template-escola .convert .box-pq p { max-width: 100%; font-size: 18px; color: #fff; } 
     .page-template-template-escola .btn.btn-red { width: 100%; } .convert { padding: 50px 0px 30px; }
     .page-template-template-escola .convert { margin: 50px 0px 20px 0px; padding: 0px; }
+    .turmas-ibra { padding: 30px 15px; } 
+    .turmas-ibra h2 { font-size: 55px; text-align: left; margin: 0px 0px 30px; } 
+    .horarios-ibra { padding: 30px 15px; } 
+    .horarios-ibra h2 { font-size: 55px; text-align: left; margin: 0px 0px 70px; } 
+    .horarios-ibra p { font-size: 18px; margin: -90px 0px 0px 0px; } 
+    .atletas-ibra.convert-secundario { padding: 0px 15px 40px; } 
+    .page-template-template-escola .convert .box-pq h4 strong { color: #f1f1f1; font-size: 25px; } 
+    .page-template-template-escola .convert .box-pq h4 { font-size: 15px; color: #d9d9d9; }
 
+    /* na midia*/
+    .na-midia { padding: 30px 0px 40px; }
+    .na-midia h2 { font-size: 55px; text-align: left; margin: 0px 0px 80px; padding: 0px 15px; }
+    .na-midia .contato-head p { padding: 0px 15px; margin: 0px; } 
+    
     /* Instalacoes */
     .contato-page h2 {font-size: 45px;text-align: left;margin: 0px 0px 80px;}
     .contato-page { padding: 30px 15px; }
@@ -10048,6 +10245,7 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .instalacoes-title { font-size: 25px; margin: 50px 0px 15px; }
     .page-template-template-instalacoes .contato-head p {margin: -10px 0px 0px;} 
     .page-template-template-instalacoes .contato-page .col {padding: 0px;}
+    .btn.btn-red.waze { width: fit-content; }
 
 
     /* Patrocinadores */
@@ -10062,6 +10260,20 @@ button.btn.btn-red.btn-peneira { border: none; font-size: 14px; padding: 7px 20p
     .page-template-template-contato .contato-page h2 { font-size: 55px; text-align: left; margin: 0px 0px 60px; } 
     .page-template-template-contato .contato-head p { font-size: 20px; margin: 0px; width: 60%; }
     .page-template-template-contato .contato-page .col { padding: 0px; }
+
+    /* Trabalhe */
+    .page-template-template-trabalhe .contato-page.trabalhe-page h2 { font-size: 55px; } 
+    .page-template-template-trabalhe.us-version .contato-page.trabalhe-page .contato-head { top: 30px; }
+    .page-template-template-trabalhe .contato-page.trabalhe-page .contato-head p { margin: 40px 0px 0px; } 
+    .page-template-template-trabalhe input[type="file"] { font-size: 14px; }
+
+    /* Peneiras */
+    .page-template-template-peneiras .proximos-jogos h2 { padding: 0px 15px; } 
+    .page-template-template-peneiras .proximos-jogos .contato-head p { padding: 0px 15px; margin: 10px 0px 0px; } 
+    .page-template-template-peneiras .proximos-jogos { padding: 40px 0px; }
+    .table-resp { overflow-x: auto; margin: 0px 0px 40px 0px; } 
+    .page-template-template-peneiras .proximos-jogos h4 { margin: 0px 0px 10px; } 
+    button.btn.btn-red.btn-peneira { width: 100%; }
 }
 
 @media (max-width: 360px) {

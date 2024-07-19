@@ -17,7 +17,7 @@ get_header();?>
 
 				<h5><?php esc_html_e( 'Informações', 'ibrachina' ); ?></h5>
 
-				<p><strong>Tel:</strong> <a href="">+55 (11) 2605-3903</a>
+				<p><strong>Tel:</strong> <a href="tel:551126053903">+55 (11) 2605-3903</a>
 					<p><strong>E-mail:</strong> contato@ibrachinaarena.com.br</p>
 					<p><strong><?php esc_html_e( 'Horário', 'ibrachina' ); ?>:</strong> <?php esc_html_e( 'Segunda a Sexta', 'ibrachina' ); ?> das 09h às 23h<br>
 						<?php esc_html_e( 'Sábado e Domingo', 'ibrachina' ); ?> das 09h às 21h
@@ -26,9 +26,15 @@ get_header();?>
 					
 
 				<h5><?php esc_html_e( 'Localização', 'ibrachina' ); ?></h5>
-					<p>R. Borges de Figueiredo, 1247-1359 - 1247-1359 - Mooca, São Paulo - SP, 03110-001</p>
-					<a href="#" class="btn btn-red waze"><?php esc_html_e( 'Dirija-se com o Waze', 'ibrachina' ); ?> <i class="fa-brands fa-waze"></i></a>
-			</div>	
+					<p>R. Borges de Figueiredo, 1325 - Mooca, São Paulo - SP, 03110-001</p>
+					<a href="https://ul.waze.com/ul?place=ChIJjeNwB1BZzpQRsdqJCIM0mrA&ll=-23.56600510%2C-46.60304220&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"  target="_blank" class="btn btn-red waze"><?php esc_html_e( 'Dirija-se com o Waze', 'ibrachina' ); ?> <i class="fa-brands fa-waze"></i></a>
+			</div>
+
+			<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="arena-text">
+					<?php the_field('sobre_a_arena'); ?>					
+				</div>	
+			</div>
 
 			<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h3 class="instalacoes-title"><?php esc_html_e( 'Nossas Instalações', 'ibrachina' ); ?></h3>
@@ -42,6 +48,8 @@ get_header();?>
 						<?php endwhile; ?>
 					<?php endif; ?>
 				</div>
+
+				
 			</div>
 
 		</div>

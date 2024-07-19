@@ -1,9 +1,9 @@
 {
-    "key": "group_665f4531810d9",
-    "title": "Results",
+    "key": "group_6658c5b613ae7",
+    "title": "Resultados",
     "fields": [
         {
-            "key": "field_669aa2e8f4fd1",
+            "key": "field_669aa3a1b8493",
             "label": "Resultados",
             "name": "resultado",
             "aria-label": "",
@@ -25,7 +25,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_669aa2e8f4fd2",
+                    "key": "field_669aa3a2b8494",
                     "label": "Categoria",
                     "name": "categoria",
                     "aria-label": "",
@@ -39,11 +39,11 @@
                         "id": ""
                     },
                     "choices": {
-                        "UNDER10": "UNDER10",
-                        "UNDER12": "UNDER12",
-                        "UNDER15": "UNDER15",
-                        "UNDER17": "UNDER17",
-                        "UNDER20": "UNDER20"
+                        "SUB10": "SUB10",
+                        "SUB12": "SUB12",
+                        "SUB15": "SUB15",
+                        "SUB17": "SUB17",
+                        "SUB20": "SUB20"
                     },
                     "default_value": false,
                     "return_format": "value",
@@ -52,10 +52,10 @@
                     "ui": 0,
                     "ajax": 0,
                     "placeholder": "",
-                    "parent_repeater": "field_669aa2e8f4fd1"
+                    "parent_repeater": "field_669aa3a1b8493"
                 },
                 {
-                    "key": "field_669aa2e8f4fd3",
+                    "key": "field_669aa3a2b8495",
                     "label": "Mandante",
                     "name": "mandante",
                     "aria-label": "",
@@ -73,10 +73,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_669aa2e8f4fd1"
+                    "parent_repeater": "field_669aa3a1b8493"
                 },
                 {
-                    "key": "field_669aa2e8f4fd4",
+                    "key": "field_669aa3a2b8496",
                     "label": "Placar do mandante",
                     "name": "placar_do_mandante",
                     "aria-label": "",
@@ -89,17 +89,17 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "default_value": 0,
                     "min": "",
                     "max": "",
                     "placeholder": "",
                     "step": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_669aa2e8f4fd1"
+                    "parent_repeater": "field_669aa3a1b8493"
                 },
                 {
-                    "key": "field_669aa2e8f4fd5",
+                    "key": "field_669aa3a2b8497",
                     "label": "Visitante",
                     "name": "visitante",
                     "aria-label": "",
@@ -117,10 +117,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_669aa2e8f4fd1"
+                    "parent_repeater": "field_669aa3a1b8493"
                 },
                 {
-                    "key": "field_669aa2e8f4fd6",
+                    "key": "field_669aa3a2b8498",
                     "label": "Placar do Visitante",
                     "name": "placar_do_visitante",
                     "aria-label": "",
@@ -140,7 +140,7 @@
                     "step": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_669aa2e8f4fd1"
+                    "parent_repeater": "field_669aa3a1b8493"
                 }
             ]
         }
@@ -150,7 +150,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "139"
+                "value": "22"
             }
         ]
     ],
@@ -163,5 +163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721411208
+    "modified": 1721410930
 }

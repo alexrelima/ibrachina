@@ -9,8 +9,9 @@ get_header();?>
 				<?php the_content();?>
 			</div>
 			
+			<div class="flex">
 			<?php 
-				$args = array('post_type' => 'post', 'posts_per_page' => -1, 'order' =>'asc', 'orderby' =>'menu_order');
+				$args = array('post_type' => 'post', 'posts_per_page' => -1, 'order' =>'desc',);
 				$loop = new WP_Query( $args ); while ( $loop->have_posts() ) : $loop->the_post();
 				$image = get_field('imagem_de_destaque');
 			?>
@@ -22,6 +23,7 @@ get_header();?>
 					</div>
 				</div>
 			<?php endwhile; wp_reset_query();?>
+			</div>
 		</div>
 	</div>
 </div>

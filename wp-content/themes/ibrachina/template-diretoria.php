@@ -24,9 +24,7 @@ get_header();?>
 				<div class="col col-xs-12 col-sm-8 col-md-8 col-lg-8">
 					<?php echo wp_kses_post( get_sub_field('resumo') );?>
 
-					<?php if( get_sub_field('linkedin') ): ?>
-						<a class="btn btn-red" href="<?php echo wp_kses_post( get_sub_field('linkedin') );?>" target="_blank">Acompanhe no LinkedIn <i class="fa-brands fa-linkedin"></i></a>
-					<?php endif; ?>
+					
 				</div>
 
 				<hr>

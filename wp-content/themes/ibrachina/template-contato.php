@@ -22,7 +22,7 @@ get_header();?>
 				<h5><?php esc_html_e( 'Informações', 'ibrachina' ); ?></h5>
 
 				<p><strong>Tel:</strong> <a href="">+55 (11) 2605-3903</a>
-					<p><strong>E-mail:</strong> contato@ibrachinaarena.com.br</p>
+					<p><strong>E-mail:</strong> contato@ibrachinafc.com.br</p>
 					<p><strong><?php esc_html_e( 'Horário', 'ibrachina' ); ?>:</strong> <?php esc_html_e( 'Segunda a Sexta', 'ibrachina' ); ?> das 09h às 23h<br>
 						<?php esc_html_e( 'Sábado e Domingo', 'ibrachina' ); ?> das 09h às 21h
 					</p>

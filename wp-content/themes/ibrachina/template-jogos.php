@@ -15,7 +15,12 @@ get_header();?>
 							?>
 							<li class="jogo">
 								<div class="dados">
-									<h3><?php echo wp_kses_post( get_sub_field('mandante') );?></h3> X <h3><?php echo wp_kses_post( get_sub_field('visitante') );?></h3>
+									<h3><?php echo wp_kses_post( get_sub_field('mandante') );?> X <?php echo wp_kses_post( get_sub_field('visitante') );?></h3>
+
+										<?php if (get_sub_field('link_de_transmissao')) { ?>
+											<a href="<?php echo wp_kses_post( get_sub_field('link_de_transmissao') );?>" target="_blank" class="btn btn-red assistir-btn"><?php esc_html_e( 'Assista online', 'ibrachina' ); ?></a>
+										<?php }?>
+
 								</div>
 								<div class="data">
 									<h4><span><?php echo wp_kses_post( get_sub_field('data') );?></span> - <?php echo wp_kses_post( get_sub_field('hora') );?></h4>

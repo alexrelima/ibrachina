@@ -1,9 +1,9 @@
 {
-    "key": "group_66719cbb72334",
-    "title": "Categorias",
+    "key": "group_669a450e4e9d2",
+    "title": "Categories",
     "fields": [
         {
-            "key": "field_66633b02fcebd",
+            "key": "field_669a450e68ed4",
             "label": "Atletas por posição",
             "name": "atletas_por_posicao",
             "aria-label": "",
@@ -25,7 +25,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_66633b655515d",
+                    "key": "field_669a459a62df6",
                     "label": "Categoria",
                     "name": "posicao",
                     "aria-label": "",
@@ -43,10 +43,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_66633b02fcebd"
+                    "parent_repeater": "field_669a450e68ed4"
                 },
                 {
-                    "key": "field_66633b18fcebe",
+                    "key": "field_669a45e262df7",
                     "label": "Elenco",
                     "name": "elenco",
                     "aria-label": "",
@@ -68,7 +68,7 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
-                            "key": "field_66633b21fcebf",
+                            "key": "field_669a45ef62df8",
                             "label": "Foto",
                             "name": "foto",
                             "aria-label": "",
@@ -91,10 +91,10 @@
                             "max_size": "",
                             "mime_types": "",
                             "preview_size": "medium",
-                            "parent_repeater": "field_66633b18fcebe"
+                            "parent_repeater": "field_669a45e262df7"
                         },
                         {
-                            "key": "field_66633cec35dab",
+                            "key": "field_669a460f62df9",
                             "label": "Camisa",
                             "name": "camisa",
                             "aria-label": "",
@@ -114,10 +114,10 @@
                             "step": "",
                             "prepend": "",
                             "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
+                            "parent_repeater": "field_669a45e262df7"
                         },
                         {
-                            "key": "field_66633cf735dac",
+                            "key": "field_669a463162dfa",
                             "label": "Nome",
                             "name": "nome",
                             "aria-label": "",
@@ -135,10 +135,10 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
+                            "parent_repeater": "field_669a45e262df7"
                         },
                         {
-                            "key": "field_66633cff35dad",
+                            "key": "field_669a464662dfb",
                             "label": "Ano de Nascimento",
                             "name": "ano_de_nascimento",
                             "aria-label": "",
@@ -158,10 +158,10 @@
                             "step": "",
                             "prepend": "",
                             "append": "",
-                            "parent_repeater": "field_66633b18fcebe"
+                            "parent_repeater": "field_669a45e262df7"
                         }
                     ],
-                    "parent_repeater": "field_66633b02fcebd"
+                    "parent_repeater": "field_669a450e68ed4"
                 }
             ]
         }
@@ -169,7 +169,7 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "==",
                 "value": "template-categorias.php"
             }
@@ -184,5 +184,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721387272
+    "modified": 1721386683
 }

@@ -1,9 +1,9 @@
 {
-    "key": "group_66706542af031",
-    "title": "Próximos Jogos",
+    "key": "group_669a4d539ecc9",
+    "title": "Games Schedule",
     "fields": [
         {
-            "key": "field_667065437b4bf",
+            "key": "field_669a4d53a1056",
             "label": "Próximos Jogos",
             "name": "proximos_jogos",
             "aria-label": "",
@@ -25,7 +25,7 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_667065547b4c0",
+                    "key": "field_669a4d53a858f",
                     "label": "Mandante",
                     "name": "mandante",
                     "aria-label": "",
@@ -43,10 +43,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_667065437b4bf"
+                    "parent_repeater": "field_669a4d53a1056"
                 },
                 {
-                    "key": "field_667065637b4c1",
+                    "key": "field_669a4d53ac031",
                     "label": "Visitante",
                     "name": "visitante",
                     "aria-label": "",
@@ -64,10 +64,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_667065437b4bf"
+                    "parent_repeater": "field_669a4d53a1056"
                 },
                 {
-                    "key": "field_66706cb9fd0f7",
+                    "key": "field_669a4d53afabd",
                     "label": "Data",
                     "name": "data",
                     "aria-label": "",
@@ -85,10 +85,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_667065437b4bf"
+                    "parent_repeater": "field_669a4d53a1056"
                 },
                 {
-                    "key": "field_667065737b4c2",
+                    "key": "field_669a4d53b356f",
                     "label": "Hora",
                     "name": "hora",
                     "aria-label": "",
@@ -106,10 +106,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_667065437b4bf"
+                    "parent_repeater": "field_669a4d53a1056"
                 },
                 {
-                    "key": "field_667065837b4c3",
+                    "key": "field_669a4d53b6fd4",
                     "label": "Evento",
                     "name": "evento",
                     "aria-label": "",
@@ -127,10 +127,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_667065437b4bf"
+                    "parent_repeater": "field_669a4d53a1056"
                 },
                 {
-                    "key": "field_667065987b4c4",
+                    "key": "field_669a4d53baa78",
                     "label": "Local",
                     "name": "local",
                     "aria-label": "",
@@ -148,10 +148,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_667065437b4bf"
+                    "parent_repeater": "field_669a4d53a1056"
                 },
                 {
-                    "key": "field_669a49e982dc5",
+                    "key": "field_669a4d53be4fc",
                     "label": "Link de transmissão",
                     "name": "link_de_transmissao",
                     "aria-label": "",
@@ -166,12 +166,12 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "parent_repeater": "field_667065437b4bf"
+                    "parent_repeater": "field_669a4d53a1056"
                 }
             ]
         },
         {
-            "key": "field_667079095f80b",
+            "key": "field_669a4d53a4b02",
             "label": "Imagem de destaque",
             "name": "imagem_de_destaque",
             "aria-label": "",
@@ -214,5 +214,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721387516
+    "modified": 1721388443
 }

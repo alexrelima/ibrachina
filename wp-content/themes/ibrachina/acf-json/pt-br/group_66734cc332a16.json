@@ -3,6 +3,26 @@
     "title": "Peneiras",
     "fields": [
         {
+            "key": "field_669a6c6f22076",
+            "label": "Conteúdo Peneiras",
+            "name": "conteudo_peneiras",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_66734cc4939f1",
             "label": "Próximas Peneiras",
             "name": "proximas_peneiras",
@@ -233,5 +253,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718833777
+    "modified": 1721396362
 }

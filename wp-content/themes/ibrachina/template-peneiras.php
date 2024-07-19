@@ -8,32 +8,40 @@ get_header();?>
 			<div class="contato-head">
 				<?php the_content();?>
 			</div>
-			<div class="col col-xs-12 col-sm-8 col-md-8 col-lg-8">
+
+			<div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="content-peneiras">
+					<?php the_field('conteudo_peneiras'); ?>
+				</div>
+			</div>
+			<div class="col col-xs-12 col-sm-12 col-md-8 col-lg-8">
 				<?php if( have_rows('proximas_peneiras') ){ ?>
 					<h4><?php esc_html_e( 'Próximas Peneiras', 'ibrachina' ); ?></h4>
-					<table class="horarios">
-						<tr class="top-table">
-							<td><?php esc_html_e( 'Idade', 'ibrachina' ); ?></td>
-							<td><?php esc_html_e( 'Local', 'ibrachina' ); ?></td>
-							<td><?php esc_html_e( 'Data', 'ibrachina' ); ?></td>
-							<td><?php esc_html_e( 'Horário', 'ibrachina' ); ?></td>
-							<td><?php esc_html_e( 'Documentos Obrigatórios', 'ibrachina' ); ?></td>
-						</tr>
-						<?php while( have_rows('proximas_peneiras') ): the_row();?>
-							<tr>
-							<td class="idade"><?php echo wp_kses_post( get_sub_field('idade') );?></td>
-							<td><?php echo wp_kses_post( get_sub_field('local') );?></td>
-							<td><?php echo wp_kses_post( get_sub_field('data') );?></td>
-							<td><?php echo wp_kses_post( get_sub_field('horario') );?></td>
-							<td><?php echo wp_kses_post( get_sub_field('documentacao_obrigatoria') );?></td>
-						</tr>
-						<?php endwhile; ?>
-					</table>
+					<div class="table-resp">
+						<table class="horarios">
+							<tr class="top-table">
+								<td><?php esc_html_e( 'Idade', 'ibrachina' ); ?></td>
+								<td><?php esc_html_e( 'Local', 'ibrachina' ); ?></td>
+								<td><?php esc_html_e( 'Data', 'ibrachina' ); ?></td>
+								<td><?php esc_html_e( 'Horário', 'ibrachina' ); ?></td>
+								<td><?php esc_html_e( 'Documentos Obrigatórios', 'ibrachina' ); ?></td>
+							</tr>
+							<?php while( have_rows('proximas_peneiras') ): the_row();?>
+								<tr>
+									<td class="idade"><?php echo wp_kses_post( get_sub_field('idade') );?></td>
+									<td><?php echo wp_kses_post( get_sub_field('local') );?></td>
+									<td><?php echo wp_kses_post( get_sub_field('data') );?></td>
+									<td><?php echo wp_kses_post( get_sub_field('horario') );?></td>
+									<td><?php echo wp_kses_post( get_sub_field('documentacao_obrigatoria') );?></td>
+								</tr>
+							<?php endwhile; ?>
+						</table>
+					</div>
 				<?php }else{ ?> 
 					<h3 class="no-date"><?php esc_html_e( 'Sem peneira em aberto no momento!', 'ibrachina' ); ?></h3>
 				<?php } ?>
 			</div>
-			<div class="col col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			<div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4">
 				<h4><?php esc_html_e( 'Peneiras Realizadas', 'ibrachina' ); ?></h4>
 				<?php if( have_rows('aprovados') ): ?>
 				<table class="horarios">
